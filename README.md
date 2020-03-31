@@ -1,3 +1,6 @@
+## My Portfolio Landing Page
+
+#### Introduction
 Author: Chase Hochstrasser
 
-see my website here -> https://chochstrasser.github.io
+URL: https://chochstrasser.github.io
