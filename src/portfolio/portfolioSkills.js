@@ -8,56 +8,82 @@ const progressBar80 = {
   width: "80%"
 };
 
-const progressBar75 = {
-  width: "75%"
+const progressBar47 = {
+  width: "47%"
 };
 
 const progressBar50 = {
   width: "50%"
 };
 
+const progressBar20 = {
+  width: "20%"
+};
+
+const progressBar60 = {
+  width: "60%"
+};
+
 const PortfolioSkills = () => (
   <>
-    <p class="w3-large">
+    <p className="código-large">
       <b>
-        <i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>
+        <i className="fa fa-asterisk fa-fw código-margin-right código-text-teal"></i>
         Skills
       </b>
     </p>
     <p>React</p>
-    <div class="w3-light-grey w3-round-xlarge w3-small">
+    <div className="código-light-grey código-round-xlarge código-small">
       <div
-        class="w3-container w3-center w3-round-xlarge w3-teal"
-        style={progressBar90}
+        className="código-container código-center código-round-xlarge código-teal"
+        style={progressBar80}
       >
         90%
       </div>
     </div>
     <p>Javascript</p>
-    <div class="w3-light-grey w3-round-xlarge w3-small">
+    <div className="código-light-grey código-round-xlarge código-small">
       <div
-        class="w3-container w3-center w3-round-xlarge w3-teal"
-        style={progressBar80}
+        className="código-container código-center código-round-xlarge código-teal"
+        style={progressBar90}
       >
-        <div class="w3-center w3-text-white">80%</div>
+        <div className="código-center código-text-white">80%</div>
       </div>
     </div>
     <p>WordPress</p>
-    <div class="w3-light-grey w3-round-xlarge w3-small">
+    <div className="código-light-grey código-round-xlarge código-small">
       <div
-        class="w3-container w3-center w3-round-xlarge w3-teal"
-        style={progressBar75}
+        className="código-container código-center código-round-xlarge código-teal"
+        style={progressBar47}
       >
-        75%
+        47%
       </div>
     </div>
     <p>Algorithms</p>
-    <div class="w3-light-grey w3-round-xlarge w3-small">
+    <div className="código-light-grey código-round-xlarge código-small">
       <div
-        class="w3-container w3-center w3-round-xlarge w3-teal"
+        className="código-container código-center código-round-xlarge código-teal"
         style={progressBar50}
       >
         50%
+      </div>
+    </div>
+    <p>Angular</p>
+    <div className="código-light-grey código-round-xlarge código-small">
+      <div
+        className="código-container código-center código-round-xlarge código-teal"
+        style={progressBar20}
+      >
+        20%
+      </div>
+    </div>
+    <p>C#</p>
+    <div className="código-light-grey código-round-xlarge código-small">
+      <div
+        className="código-container código-center código-round-xlarge código-teal"
+        style={progressBar60}
+      >
+        60%
       </div>
     </div>
   </>

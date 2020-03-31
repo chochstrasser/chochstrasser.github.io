@@ -1,0 +1,11 @@
+.full-width {
+  width: 100%;
+}
+
+.background-white-transparent {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+a {
+  text-decoration: none;
+}
