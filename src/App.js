@@ -2,14 +2,43 @@ import React from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   fab,
+  faSlack,
+  faGithub,
   faTwitter,
-  faFacebookF
+  faFacebookF,
 } from "@fortawesome/free-brands-svg-icons";
-import { faUser, faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import {
+  faUser,
+  faBriefcase,
+  faHome,
+  faEnvelope,
+  faPhone,
+  faAsterisk,
+  faGlobeAmericas,
+  faSuitcase,
+  faCalendarAlt,
+  faCertificate,
+} from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 import Portfolio from "./portfolio";
 
-library.add(fab, faUser, faBriefcase, faTwitter, faFacebookF);
+library.add(
+  fab,
+  faUser,
+  faBriefcase,
+  faHome,
+  faEnvelope,
+  faPhone,
+  faAsterisk,
+  faGlobeAmericas,
+  faSuitcase,
+  faCalendarAlt,
+  faCertificate,
+  faSlack,
+  faGithub,
+  faTwitter,
+  faFacebookF
+);
 
 const App = () => (
   <>

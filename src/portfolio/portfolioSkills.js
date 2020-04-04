@@ -1,34 +1,38 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const progressBar90 = {
-  width: "90%"
+  width: "90%",
 };
 
 const progressBar80 = {
-  width: "80%"
+  width: "80%",
 };
 
 const progressBar47 = {
-  width: "47%"
+  width: "47%",
 };
 
 const progressBar50 = {
-  width: "50%"
+  width: "50%",
 };
 
 const progressBar20 = {
-  width: "20%"
+  width: "20%",
 };
 
 const progressBar60 = {
-  width: "60%"
+  width: "60%",
 };
 
 const PortfolioSkills = () => (
   <>
     <p className="código-large">
       <b>
-        <i className="fa fa-asterisk fa-fw código-margin-right código-text-teal"></i>
+        <FontAwesomeIcon
+          className="código-margin-right código-large código-text-teal"
+          icon="asterisk"
+        />
         Skills
       </b>
     </p>
