@@ -17,15 +17,21 @@
     "react-scripts": "3.4.1"
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^2.2.0",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.5.0",
+    "prettier": "1.19.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "CI=true react-scripts test --colors",
     "eject": "react-scripts eject",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -b master -d build"
+    "deploy": "gh-pages -b master -d build",
+    "lint": "eslint --ext .jsx,.js src/**",
+    "lint:fix": "eslint --ext .jsx,.js,.ts,.tsx src/ --fix",
+    "format": "prettier --write '**/*.{js,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml,scss,sass}' && yarn lint:fix"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -41,5 +47,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && yarn test"
+    }
   }
 }

@@ -13,6 +13,18 @@ const Footer = () => (
       className="código-hover-opacity space-around"
       icon={["fab", "linkedin"]}
     />
+    <FontAwesomeIcon
+      className="código-hover-opacity space-around"
+      icon={["fab", "github"]}
+    />
+    <FontAwesomeIcon
+      className="código-hover-opacity space-around"
+      icon="globe-americas"
+    />
+    <FontAwesomeIcon
+      className="código-hover-opacity space-around"
+      icon={["fab", "slack"]}
+    />
     <br />
     <br />
   </footer>

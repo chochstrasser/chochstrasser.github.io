@@ -1,25 +1,29 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const progressBar95 = {
   width: "95%",
-  height: "24px"
+  height: "24px",
 };
 
 const progressBar3 = {
   width: "3%",
-  height: "24px"
+  height: "24px",
 };
 
 const progressBar30 = {
   width: "30%",
-  height: "24px"
+  height: "24px",
 };
 
 const PortfolioLanguages = () => (
   <>
     <p className="código-large código-text-theme">
       <b>
-        <i className="fa fa-globe fa-fw código-margin-right código-text-teal"></i>
+        <FontAwesomeIcon
+          className="código-margin-right código-large código-text-teal"
+          icon="globe-americas"
+        />
         Languages
       </b>
     </p>
