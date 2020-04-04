@@ -3,25 +3,25 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const PortfolioWorkExperience = () => {
   return (
-    <div class="código-container código-card código-white código-margin-bottom">
-      <h2 class="código-text-grey código-padding-16">
+    <div className="código-container código-card código-white código-margin-bottom">
+      <h2 className="código-text-grey código-padding-16">
         <FontAwesomeIcon
           className="código-margin-right código-xxlarge código-text-teal"
           icon="suitcase"
         />
         Work Experience
       </h2>
-      <div class="código-container">
-        <h5 class="código-opacity">
+      <div className="código-container">
+        <h5 className="código-opacity">
           <b>Front End Developer / SoFi</b>
         </h5>
-        <h6 class="código-text-teal">
+        <h6 className="código-text-teal">
           <FontAwesomeIcon
             className="código-margin-right código-text-teal"
             icon="calendar-alt"
           />
           Apr 2019 -{" "}
-          <span class="código-tag código-teal código-round">Current</span>
+          <span className="código-tag código-teal código-round">Current</span>
         </h6>
         <p>
           Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in
@@ -30,11 +30,11 @@ const PortfolioWorkExperience = () => {
         </p>
         <hr />
       </div>
-      <div class="código-container">
-        <h5 class="código-opacity">
+      <div className="código-container">
+        <h5 className="código-opacity">
           <b>Software Engineer / SkyWest</b>
         </h5>
-        <h6 class="código-text-teal">
+        <h6 className="código-text-teal">
           <FontAwesomeIcon
             className="código-margin-right código-text-teal"
             icon="calendar-alt"
@@ -48,11 +48,11 @@ const PortfolioWorkExperience = () => {
         </p>
         <hr />
       </div>
-      <div class="código-container">
-        <h5 class="código-opacity">
+      <div className="código-container">
+        <h5 className="código-opacity">
           <b>Web Developer / dōTERRA</b>
         </h5>
-        <h6 class="código-text-teal">
+        <h6 className="código-text-teal">
           <FontAwesomeIcon
             className="código-margin-right código-text-teal"
             icon="calendar-alt"
@@ -62,11 +62,11 @@ const PortfolioWorkExperience = () => {
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
         <br />
       </div>
-      <div class="código-container">
-        <h5 class="código-opacity">
+      <div className="código-container">
+        <h5 className="código-opacity">
           <b>Student Software Engineer / Rocky Mountain Power</b>
         </h5>
-        <h6 class="código-text-teal">
+        <h6 className="código-text-teal">
           <FontAwesomeIcon
             className="código-margin-right código-text-teal"
             icon="calendar-alt"
