@@ -5,7 +5,7 @@ import {
   faSlack,
   faGithub,
   faTwitter,
-  faFacebookF,
+  faFacebookF
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faUser,
@@ -18,6 +18,7 @@ import {
   faSuitcase,
   faCalendarAlt,
   faCertificate,
+  faCogs
 } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 import Portfolio from "./portfolio";
@@ -34,6 +35,7 @@ library.add(
   faSuitcase,
   faCalendarAlt,
   faCertificate,
+  faCogs,
   faSlack,
   faGithub,
   faTwitter,
