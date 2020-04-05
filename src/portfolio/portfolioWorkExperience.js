@@ -23,11 +23,6 @@ const PortfolioWorkExperience = () => {
           Apr 2019 -{" "}
           <span className="código-tag código-teal código-round">Current</span>
         </h6>
-        <p>
-          Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in
-          deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta
-          ea et odio, unde doloremque repellendus iure, iste.
-        </p>
         <hr />
       </div>
       <div className="código-container">
@@ -41,11 +36,6 @@ const PortfolioWorkExperience = () => {
           />
           Apr 2016 - Mar 2019
         </h6>
-        <p>
-          Consectetur adipisicing elit. Praesentium magnam consectetur vel in
-          deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta
-          ea et odio, unde doloremque repellendus iure, iste.
-        </p>
         <hr />
       </div>
       <div className="código-container">
@@ -59,7 +49,6 @@ const PortfolioWorkExperience = () => {
           />
           Jan 2014 - Apr 2016
         </h6>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
         <br />
       </div>
       <div className="código-container">
@@ -73,7 +62,6 @@ const PortfolioWorkExperience = () => {
           />
           May 2009 - Jan 2014
         </h6>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
         <br />
       </div>
     </div>
