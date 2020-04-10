@@ -1,5 +1,9 @@
 ## My Portfolio Landing Page
 
+<div align="center">
+  <img src="https://octodex.github.com/images/baracktocat.jpg" width="200">
+</div>
+
 #### Introduction
 
 I'm using this site/repository to hold my resume and refs to my past and present work to help my future in programming.
