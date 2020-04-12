@@ -5,26 +5,45 @@ import "./footer.css";
 const Footer = () => (
   <footer className="código-container código-teal código-center código-margin-top">
     <p>Find me on social media.</p>
-    <FontAwesomeIcon
-      className="código-hover-opacity space-around"
-      icon={["fab", "facebook-square"]}
-    />
-    <FontAwesomeIcon
-      className="código-hover-opacity space-around"
-      icon={["fab", "linkedin"]}
-    />
-    <FontAwesomeIcon
-      className="código-hover-opacity space-around"
-      icon={["fab", "github"]}
-    />
-    <FontAwesomeIcon
-      className="código-hover-opacity space-around"
-      icon="globe-americas"
-    />
-    <FontAwesomeIcon
-      className="código-hover-opacity space-around"
-      icon={["fab", "slack"]}
-    />
+    <a
+      href="https://www.facebook.com/chase.hochstrasser"
+      className="space-around"
+    >
+      <FontAwesomeIcon
+        className="código-hover-opacity"
+        icon={["fab", "facebook-square"]}
+      />
+    </a>
+    <a
+      href="https://www.linkedin.com/in/chase-hochstrasser/"
+      className="space-around"
+    >
+      <FontAwesomeIcon
+        className="código-hover-opacity"
+        icon={["fab", "linkedin"]}
+      />
+    </a>
+    <a href="https://github.com/chochstrasser" className="space-around">
+      <FontAwesomeIcon
+        className="código-hover-opacity"
+        icon={["fab", "github"]}
+      />
+    </a>
+    <a
+      href="https://mentors.codingcoach.io/?name=Chase+Hochstrasser"
+      className="space-around"
+    >
+      <FontAwesomeIcon className="código-hover-opacity" icon="globe-americas" />
+    </a>
+    <a
+      href="https://coding-coach.slack.com/team/UM3PPF90D"
+      className="space-around"
+    >
+      <FontAwesomeIcon
+        className="código-hover-opacity"
+        icon={["fab", "slack"]}
+      />
+    </a>
     <br />
     <br />
   </footer>

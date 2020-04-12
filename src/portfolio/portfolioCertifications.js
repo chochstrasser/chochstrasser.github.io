@@ -9,7 +9,7 @@ const PortfolioCertifications = () => {
           className="código-margin-right código-xxlarge código-text-teal"
           icon="cogs"
         />
-        License &apos; Certifications
+        Licenses &amp; Certifications
       </h2>
       <div className="código-container">
         <h5 className="código-opacity">
@@ -23,8 +23,11 @@ const PortfolioCertifications = () => {
           Oct 2019 - Dec 2021
         </h6>
         <p>
-          Scrum Alliance, Id: 1129934
-          <a href="http://bcert.me/szgfbcpjw">Credential URL</a>
+          Scrum Alliance
+          <br />
+          Credential ID 1129934
+          <br />
+          <a href="http://bcert.me/szgfbcpjw">See credential</a>
         </p>
         <br />
       </div>
