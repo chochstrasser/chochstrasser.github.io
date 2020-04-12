@@ -18,7 +18,7 @@ const PortfolioLeftColumn = () => (
           <h2>Chase Hochstrasser</h2>
         </div>
       </div>
-      <div className="código-container">
+      <div className="código-container código-margin-bottom">
         <PortfolioContact />
         <PortfolioSkills />
         <PortfolioLanguages />
