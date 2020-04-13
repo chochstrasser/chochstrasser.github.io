@@ -47,10 +47,10 @@ library.add(
 const App = () => (
   <Router>
     <Switch>
-      <Route path="/" component={Portfolio} />
-      {/* <Route path="/auth" component={UnauthorizedLayout} /> */}
+      <Route exact path="/" component={Portfolio} />
+      <Route path="/auth" component={() => <div>Auth file</div>} />
       {/* <AuthorizedRoute path="/projects" component={AuthorizedLayout} /> */}
-      <Redirect to="/" />
+      <Route component={() => <div>404 File Not Found</div>} />
     </Switch>
   </Router>
 );
