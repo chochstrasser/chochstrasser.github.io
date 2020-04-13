@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route, Redirect } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import Router from "./utils/Router";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
