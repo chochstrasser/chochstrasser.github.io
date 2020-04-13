@@ -1,4 +1,6 @@
 import React from "react";
+import { Switch, Route, Redirect } from "react-router-dom";
+import Router from "./utils/Router";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   fab,
@@ -43,9 +45,14 @@ library.add(
 );
 
 const App = () => (
-  <>
-    <Portfolio />
-  </>
+  <Router>
+    <Switch>
+      <Route path="/" component={Portfolio} />
+      {/* <Route path="/auth" component={UnauthorizedLayout} /> */}
+      {/* <AuthorizedRoute path="/projects" component={AuthorizedLayout} /> */}
+      <Redirect to="/" />
+    </Switch>
+  </Router>
 );
 
 export default App;
