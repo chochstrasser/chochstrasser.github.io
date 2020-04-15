@@ -7,7 +7,7 @@ import {
   faSlack,
   faGithub,
   faTwitter,
-  faFacebookF
+  faFacebookF,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faUser,
@@ -20,10 +20,11 @@ import {
   faSuitcase,
   faCalendarAlt,
   faCertificate,
-  faCogs
+  faCogs,
 } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 import Portfolio from "./portfolio";
+// import ContextApi from "./contextApi";
 
 library.add(
   fab,
@@ -49,8 +50,9 @@ const App = () => (
     <Switch>
       <Route exact path="/" component={Portfolio} />
       <Route path="/auth" component={() => <div>Auth file</div>} />
+      {/* <Route path="/contextApi" component={ContextApi} /> */}
       {/* <AuthorizedRoute path="/projects" component={AuthorizedLayout} /> */}
-      <Route component={() => <div>404 File Not Found</div>} />
+      {/* <Route component={() => <div>404 File Not Found</div>} /> */}
     </Switch>
   </Router>
 );

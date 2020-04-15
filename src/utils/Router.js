@@ -1,10 +1,10 @@
 import React from "react";
-import { HashRouter, Route, Redirect } from "react-router-dom";
+import { BrowserRouter, Route, Redirect } from "react-router-dom";
 
 // Normalize all paths to not have trailing slashes even if they
 // matched <Route> with one:
 const Router = ({ children }) => (
-  <HashRouter>
+  <BrowserRouter>
     <Route
       render={({ location: { pathname, search, hash } }) =>
         pathname !== "/" && pathname.slice(-1) === "/" ? (
@@ -14,7 +14,7 @@ const Router = ({ children }) => (
         )
       }
     />
-  </HashRouter>
+  </BrowserRouter>
 );
 
 export default Router;
