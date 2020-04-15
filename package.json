@@ -52,13 +52,12 @@
   "lint-staged": {
     "*.{js,jsx}": [
       "eslint --fix",
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && yarn test"
+      "pre-commit": "lint-staged"
     }
   }
 }

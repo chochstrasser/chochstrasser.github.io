@@ -24,7 +24,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 import Portfolio from "./portfolio";
-// import ContextApi from "./contextApi";
+import ContextApi from "./contextApi";
 
 library.add(
   fab,
@@ -50,7 +50,7 @@ const App = () => (
     <Switch>
       <Route exact path="/" component={Portfolio} />
       <Route path="/auth" component={() => <div>Auth file</div>} />
-      {/* <Route path="/contextApi" component={ContextApi} /> */}
+      <Route path="/contextApi" component={ContextApi} />
       {/* <AuthorizedRoute path="/projects" component={AuthorizedLayout} /> */}
       {/* <Route component={() => <div>404 File Not Found</div>} /> */}
     </Switch>
