@@ -25,6 +25,7 @@ import {
 import "./App.css";
 import Portfolio from "./portfolio";
 import ContextApi from "./contextApi";
+import Trie from "./trie";
 
 library.add(
   fab,
@@ -49,6 +50,7 @@ const App = () => (
   <Router>
     <Switch>
       <Route exact path="/" component={Portfolio} />
+      <Route path="/trie" component={Trie} />
       <Route path="/auth" component={() => <div>Auth file</div>} />
       <Route path="/contextApi" component={ContextApi} />
       {/* <AuthorizedRoute path="/projects" component={AuthorizedLayout} /> */}
