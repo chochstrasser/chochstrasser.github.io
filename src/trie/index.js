@@ -1,38 +1,55 @@
 import React from "react";
-import TrieImage from "../images/trie.svg";
+import styled from "styled-components";
+import TrieCode from "./trieCode";
+import TrieReferences from "./trieReferences";
+import { useHistory } from "react-router-dom";
+import TrieDetail from "./trieDetail";
+
+const Wrapper = styled.div`
+  max-width: 1400px;
+`;
 
 const Trie = () => {
+  const history = useHistory();
+
+  const handleClick = () => {
+    history.push("/");
+  };
+
   return (
-    <>
-      <h2>Trie</h2>
-      <div>
-        In computer science, a <strong>trie</strong>, also called digital tree
-        and sometimes radix tree or prefix tree (as they can be searched by
-        prefixes), is a kind of search tree—an ordered tree data structure that
-        is used to store a dynamic set or associative array where the keys are
-        usually strings. Unlike a binary search tree, no node in the tree stores
-        the key associated with that node; instead, its position in the tree
-        defines the key with which it is associated. All the descendants of a
-        node have a common prefix of the string associated with that node, and
-        the root is associated with the empty string. Values are not necessarily
-        associated with every node. Rather, values tend only to be associated
-        with leaves, and with some inner nodes that correspond to keys of
-        interest. For the space-optimized presentation of prefix tree, see
-        compact prefix tree.
+    <Wrapper className="código-content código-white">
+      <div className="código-container">
+        <h1 className="código-xxxlarge">
+          <b>Trie</b>
+        </h1>
+        <TrieDetail />
+        <TrieReferences />
+        <h3>Operations</h3>
+        <p>What can a trie do? Three simple operations are as follows:</p>
+        <ol>
+          <li>add</li>
+          <li>remove</li>
+          <li>search</li>
+        </ol>
+        <TrieCode />
       </div>
-      <img src={TrieImage} alt="trie" />
-      <h3>References</h3>
-      <ul>
-        <li>
-          <a href="https://en.wikipedia.org/wiki/Trie">Wikipedia</a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/watch?v=zIjfhVPRZCg&list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8&index=7&t=0s">
-            YouTube
-          </a>
-        </li>
-      </ul>
-    </>
+      <footer className="código-padding-64 código-white">
+        <div className="código-bar">
+          <button
+            className="código-button código-left código-teal código-hover-teal"
+            onClick={handleClick}
+          >
+            ❮ Previous
+          </button>
+          <button
+            className="código-button código-right código-teal código-hover-teal"
+            onClick={handleClick}
+          >
+            Next ❯
+          </button>
+        </div>
+      </footer>
+    </Wrapper>
   );
 };
 
