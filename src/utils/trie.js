@@ -1,16 +1,12 @@
-import React from "react";
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
-
-const DATA_STRUCTURE = `const emptyNode = () => ({
+const emptyNode = () => ({
   children: {},
   items: [],
-});`;
+});
 
-const IMPLEMENTATION = `const Trie = () => {
+const Trie = () => {
   const root = emptyNode();
-  
-  const breakUpWord = word => {
+
+  const breakUpWord = (word) => {
     const letter = word.charAt(0);
     const remainder = word.substring(1);
     return { letter, remainder };
@@ -31,7 +27,7 @@ const IMPLEMENTATION = `const Trie = () => {
   const removeNode = (node, text, item) => {
     if (!text?.length) {
       const content = node.items || [];
-      const index = content.findIndex(c => c === item);
+      const index = content.findIndex((c) => c === item);
       content.splice(index, 1);
       node.items = [...content];
     }
@@ -42,8 +38,10 @@ const IMPLEMENTATION = `const Trie = () => {
     removeNode(node.children[letter], remainder, item);
   };
 
-  const collect = node => {
-    const items = Object.keys(node.children).map(c => collect(node.children[c]));
+  const collect = (node) => {
+    const items = Object.keys(node.children).map((child) => {
+      return collect(node.children[child]);
+    });
     const values = node.items || [];
     return values.concat(...items);
   };
@@ -61,39 +59,15 @@ const IMPLEMENTATION = `const Trie = () => {
 
   return {
     add: (word, item) => {
-      addNode(root, (word || '').toLocaleLowerCase(), item);
+      addNode(root, (word || "").toLocaleLowerCase(), item);
     },
     remove: (word, item) => {
-      removeNode(root, (word || '').toLocaleLowerCase(), item);
+      removeNode(root, (word || "").toLocaleLowerCase(), item);
     },
-    search: text => [...new Set(search(root, (text || '').toLocaleLowerCase()))]
+    search: (text) => [
+      ...new Set(search(root, (text || "").toLocaleLowerCase())),
+    ],
   };
-};`;
-
-const TrieCode = () => {
-  return (
-    <>
-      <h3>Data structure representation</h3>
-      <SyntaxHighlighter
-        language="javascript"
-        style={atomOneDark}
-        wrapLines={true}
-      >
-        {DATA_STRUCTURE}
-      </SyntaxHighlighter>
-
-      <h3>Implementation</h3>
-      <div className="código-row">
-        <SyntaxHighlighter
-          language="javascript"
-          style={atomOneDark}
-          wrapLines={true}
-        >
-          {IMPLEMENTATION}
-        </SyntaxHighlighter>
-      </div>
-    </>
-  );
 };
 
-export default TrieCode;
+export default Trie;
