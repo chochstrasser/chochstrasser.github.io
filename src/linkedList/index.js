@@ -1,16 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import TrieCode from "./trieCode";
-import TrieReferences from "./trieReferences";
+// import TrieCode from "./trieCode";
+// import TrieReferences from "./trieReferences";
 import { useHistory } from "react-router-dom";
-import TrieDetail from "./trieDetail";
+// import TrieDetail from "./trieDetail";
 import { ROUTES } from "../const/routes";
 
 const Wrapper = styled.div`
   max-width: 1400px;
 `;
 
-const Trie = ({ showModal }) => {
+const LinkedList = ({ showModal }) => {
   const history = useHistory();
 
   const handleClick = (path) => () => {
@@ -25,9 +25,9 @@ const Trie = ({ showModal }) => {
     <Wrapper className="código-content código-white">
       <div className="código-container">
         <h1 className="código-xxxlarge">
-          <b>Trie</b>
+          <b>Linked list</b>
         </h1>
-        <TrieDetail />
+        {/* <TrieDetail />
         <TrieReferences />
         <h3>Operations</h3>
         <p>What can a trie do? Three simple operations are as follows:</p>
@@ -36,19 +36,19 @@ const Trie = ({ showModal }) => {
           <li>remove</li>
           <li>search</li>
         </ol>
-        <TrieCode />
+        <TrieCode /> */}
       </div>
       <footer className="código-padding-64 código-white">
         <div className="código-bar">
           <button
             className="código-button código-left código-teal código-hover-teal"
-            onClick={handleClick(ROUTES.linkedList)}
+            onClick={handleClick(ROUTES.default)}
           >
             ❮ Previous
           </button>
           <button
             className="código-button código-right código-teal código-hover-teal"
-            onClick={handleClick(ROUTES.default)}
+            onClick={handleClick(ROUTES.trie)}
           >
             Next ❯
           </button>
@@ -58,4 +58,4 @@ const Trie = ({ showModal }) => {
   );
 };
 
-export default Trie;
+export default LinkedList;
