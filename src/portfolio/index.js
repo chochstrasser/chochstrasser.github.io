@@ -7,16 +7,26 @@ const maxWidthContent = {
   maxWidth: "1400px",
 };
 
-const Portfolio = () => (
-  <>
-    <div className="código-content código-margin-top" style={maxWidthContent}>
-      <div className="código-row-padding">
-        <PortfolioLeftColumn />
-        <PortfolioRightColumn />
+const Portfolio = ({ showModal }) => {
+  if (showModal) {
+    return null;
+  }
+
+  return (
+    <>
+      <div
+        role="main"
+        className="código-content código-margin-top"
+        style={maxWidthContent}
+      >
+        <div className="código-row-padding">
+          <PortfolioLeftColumn />
+          <PortfolioRightColumn />
+        </div>
       </div>
-    </div>
-    <Footer />
-  </>
-);
+      <Footer />
+    </>
+  );
+};
 
 export default Portfolio;

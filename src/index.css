@@ -1138,6 +1138,9 @@ a {
   margin-top: 16px !important;
   margin-bottom: 16px !important;
 }
+.código-margin-none {
+  margin: 0 !important;
+}
 .código-margin {
   margin: 16px !important;
 }
@@ -1152,6 +1155,9 @@ a {
 }
 .código-margin-right {
   margin-right: 16px !important;
+}
+.código-padding-none {
+  padding: 0 !important;
 }
 .código-padding-small {
   padding: 4px 8px !important;

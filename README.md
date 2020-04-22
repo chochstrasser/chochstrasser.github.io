@@ -12,6 +12,10 @@ Author: Chase Hochstrasser
 
 URL: https://chochstrasser.github.io
 
+#### Data Structures
+
+1. [Linked list](https://chochstrasser.github.io/#/linked-list)
+2. [Trie](https://chochstrasser.github.io/#/trie)
 
 #### Making Changes
 

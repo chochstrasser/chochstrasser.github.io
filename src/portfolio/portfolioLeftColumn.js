@@ -6,7 +6,7 @@ import PortfolioImage from "../images/portfolio.jpg";
 import "./portfolio.css";
 
 const fullWidth = {
-  width: "100%"
+  width: "100%",
 };
 
 const PortfolioLeftColumn = () => (
@@ -15,7 +15,7 @@ const PortfolioLeftColumn = () => (
       <div className="código-display-container">
         <img src={PortfolioImage} style={fullWidth} alt="Avatar" />
         <div className="código-container código-text-black full-width background-white-transparent">
-          <h2>Chase Hochstrasser</h2>
+          <h1>Chase Hochstrasser</h1>
         </div>
       </div>
       <div className="código-container código-margin-bottom">
