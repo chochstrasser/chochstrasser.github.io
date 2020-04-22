@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-// import TrieCode from "./trieCode";
-// import TrieReferences from "./trieReferences";
+import LinkedListCode from "./linkedListCode";
+import LinkedListReferences from "./linkedListReferences";
 import { useHistory } from "react-router-dom";
-// import TrieDetail from "./trieDetail";
+import LinkedListDetail from "./linkedListDetail";
 import { ROUTES } from "../const/routes";
 
 const Wrapper = styled.div`
@@ -27,16 +27,25 @@ const LinkedList = ({ showModal }) => {
         <h1 className="código-xxxlarge">
           <b>Linked list</b>
         </h1>
-        {/* <TrieDetail />
-        <TrieReferences />
+        <LinkedListDetail />
+        <LinkedListReferences />
         <h3>Operations</h3>
-        <p>What can a trie do? Three simple operations are as follows:</p>
+        <p>What can a linked list do?</p>
         <ol>
-          <li>add</li>
-          <li>remove</li>
+          <li>insert</li>
+          <li>removeFirst</li>
           <li>search</li>
+          <li>display</li>
+          <li>removeAt</li>
         </ol>
-        <TrieCode /> */}
+        <h3>Types</h3>
+        <p>There are many linked list types. here are a few?</p>
+        <ol>
+          <li>singly</li>
+          <li>doubly</li>
+          <li>circular</li>
+        </ol>
+        <LinkedListCode />
       </div>
       <footer className="código-padding-64 código-white">
         <div className="código-bar">
