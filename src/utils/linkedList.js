@@ -22,6 +22,7 @@ const LinkedList = () => {
     insert: (value) => {
       insertNode(head, value);
     },
+    display: () => head,
   };
 };
 

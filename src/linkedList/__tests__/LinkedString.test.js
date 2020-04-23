@@ -7,6 +7,11 @@ describe("Linked List", () => {
     LinkedListDataStrings.forEach((item) => {
       linkedList.insert(item);
     });
-    expect(linkedList).toBeDefined();
+    const list = linkedList.display();
+    expect(list).toBeDefined();
+    expect(list.data).toBe("abc");
+    expect(list.next).toBeDefined();
+    expect(list.next.data).toBe("123");
+    expect(list.next.next).toBeNull();
   });
 });
