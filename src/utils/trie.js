@@ -1,10 +1,10 @@
-const emptyNode = () => ({
+const Node = () => ({
   children: {},
   items: [],
 });
 
 const Trie = () => {
-  const root = emptyNode();
+  const root = Node();
 
   const breakUpWord = (word) => {
     const letter = word.charAt(0);
@@ -17,7 +17,7 @@ const Trie = () => {
       return;
     }
     const { letter, remainder } = breakUpWord(word);
-    node.children[letter] = node.children[letter] || emptyNode();
+    node.children[letter] = node.children[letter] || Node();
     if (!remainder) {
       node.children[letter].items.push(item);
     }

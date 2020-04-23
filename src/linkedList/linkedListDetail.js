@@ -1,7 +1,7 @@
 import React from "react";
 import LinkedListImage from "../images/linkedlist.png";
 
-const TrieDetail = () => {
+const LinkedListDetail = () => {
   return (
     <>
       <p>
@@ -41,4 +41,4 @@ const TrieDetail = () => {
   );
 };
 
-export default TrieDetail;
+export default LinkedListDetail;
