@@ -9,6 +9,19 @@ const FixedButton = styled.button`
   right: 2rem;
 `;
 
+const NavLink = ({ onClick, isActive, text }) => (
+  <button
+    className={`código-button código-block ${
+      isActive
+        ? "código-khaki código-hover-khaki"
+        : "código-white código-hover-white"
+    }`}
+    onClick={onClick}
+  >
+    {text}
+  </button>
+);
+
 const Nav = ({ handleClick, elementId, setShowModal }) => {
   const history = useHistory();
   const location = useLocation();
@@ -43,37 +56,28 @@ const Nav = ({ handleClick, elementId, setShowModal }) => {
             <h3>Where do you want to go?</h3>
           </header>
           <div>
-            <button
-              className={`código-button código-block ${
-                pathname === ROUTES.default
-                  ? "código-khaki código-hover-khaki"
-                  : "código-white código-hover-white"
-              }`}
+            <NavLink
               onClick={handleNavItemClick(ROUTES.default)}
-            >
-              Portfolio
-            </button>
+              isActive={pathname === ROUTES.default}
+              text="Portfolio"
+            />
             <h4 className="código-center">Data Structures</h4>
-            <button
-              className={`código-button código-block ${
-                pathname === ROUTES.linkedList
-                  ? "código-khaki código-hover-khaki"
-                  : "código-white código-hover-white"
-              }`}
+            <NavLink
               onClick={handleNavItemClick(ROUTES.linkedList)}
-            >
-              Linked List
-            </button>
-            <button
-              className={`código-button código-block ${
-                pathname === ROUTES.trie
-                  ? "código-khaki código-hover-khaki"
-                  : "código-white código-hover-white"
-              }`}
+              isActive={pathname === ROUTES.linkedList}
+              text="Linked list"
+            />
+            <NavLink
               onClick={handleNavItemClick(ROUTES.trie)}
-            >
-              Trie
-            </button>
+              isActive={pathname === ROUTES.trie}
+              text="Trie"
+            />
+            <h4 className="código-center">Playground</h4>
+            <NavLink
+              onClick={handleNavItemClick(ROUTES.zigzag)}
+              isActive={pathname === ROUTES.zigzag}
+              text="ZigZag conversion"
+            />
           </div>
         </div>
       </div>

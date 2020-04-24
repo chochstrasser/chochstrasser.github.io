@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import TrieCode from "./trieCode";
-import TrieReferences from "./trieReferences";
+import TrieRef from "./trieRef";
 import { useHistory } from "react-router-dom";
 import TrieDetail from "./trieDetail";
 import { ROUTES } from "../const/routes";
@@ -28,7 +28,7 @@ const Trie = ({ showModal }) => {
           <b>Trie</b>
         </h1>
         <TrieDetail />
-        <TrieReferences />
+        <TrieRef />
         <h3>Operations</h3>
         <p>What can a trie do? Three simple operations are as follows:</p>
         <ol>

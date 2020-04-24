@@ -32,6 +32,7 @@ import Portfolio from "./portfolio";
 import ContextApi from "./contextApi";
 import Trie from "./trie";
 import LinkedList from "./linkedList";
+import ZigZag from "./zigZag";
 
 library.add(
   fab,
@@ -75,6 +76,7 @@ const App = () => {
           render={() => <LinkedList {...props} />}
         />
         <Route path={ROUTES.trie} render={() => <Trie {...props} />} />
+        <Route path={ROUTES.zigzag} render={() => <ZigZag {...props} />} />
         <Route path="/auth" component={() => <div>Auth file</div>} />
         <Route path="/contextApi" component={ContextApi} />
         {/* <AuthorizedRoute path="/projects" component={AuthorizedLayout} /> */}

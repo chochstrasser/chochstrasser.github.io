@@ -7,20 +7,20 @@ const ReferenceButton = styled.a`
   }
 `;
 
-const LinkedListReferences = () => {
+const ZigZagRef = () => {
   return (
     <>
       <h3>References</h3>
       <div className="código-section">
         <ReferenceButton
           className="código-button código-hover-teal código-teal"
-          href="https://en.wikipedia.org/wiki/Linked_list"
+          href="https://leetcode.com/problems/zigzag-conversion/"
         >
-          Wikipedia
+          LeetCode
         </ReferenceButton>
         <ReferenceButton
           className="código-button código-hover-teal código-teal"
-          href="https://www.youtube.com/watch?v=njTh_OwMljA&list=PLLXdhg_r2hKA7DPDsunoDZ-Z769jWn4R8&index=1"
+          href="https://www.youtube.com/watch?v=8zXTAn7i5rU"
         >
           YouTube
         </ReferenceButton>
@@ -29,4 +29,4 @@ const LinkedListReferences = () => {
   );
 };
 
-export default LinkedListReferences;
+export default ZigZagRef;
