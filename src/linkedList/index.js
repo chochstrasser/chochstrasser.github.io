@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import LinkedListCode from "./linkedListCode";
-import LinkedListReferences from "./linkedListReferences";
+import LinkedListRef from "./linkedListRef";
 import { useHistory } from "react-router-dom";
 import LinkedListDetail from "./linkedListDetail";
 import { ROUTES } from "../const/routes";
@@ -28,7 +28,7 @@ const LinkedList = ({ showModal }) => {
           <b>Linked list</b>
         </h1>
         <LinkedListDetail />
-        <LinkedListReferences />
+        <LinkedListRef />
         <h3>Operations</h3>
         <p>What can a linked list do?</p>
         <ol>

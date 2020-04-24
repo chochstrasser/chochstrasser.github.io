@@ -7,7 +7,7 @@ const ReferenceButton = styled.a`
   }
 `;
 
-const TrieReferences = () => {
+const TrieRef = () => {
   return (
     <>
       <h3>References</h3>
@@ -29,4 +29,4 @@ const TrieReferences = () => {
   );
 };
 
-export default TrieReferences;
+export default TrieRef;
