@@ -27,15 +27,15 @@ const IMPLEMENTATION_TWO = `const ZigZagConversion = (s, numRows) => {
   const cycleLen = 2 * numRows - 2;
   for (let i = 0; i < numRows; i++) {
     for (let j = 0; j + i < n; j += cycleLen) {
-      result += s.charAt(j + i);
+      result += s[j + i];
       if (i !== 0 && i !== numRows - 1 && j + cycleLen - i < n)
-        result += s.charAt(j + cycleLen - i);
+        result += s[j + cycleLen - i];
     }
   }
   return result;
 };`;
 
-const LinkedListCode = () => {
+const ZigZagCode = () => {
   return (
     <>
       <h3>Implementation one</h3>
@@ -63,4 +63,4 @@ const LinkedListCode = () => {
   );
 };
 
-export default LinkedListCode;
+export default ZigZagCode;

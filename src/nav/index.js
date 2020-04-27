@@ -72,7 +72,12 @@ const Nav = ({ handleClick, elementId, setShowModal }) => {
               isActive={pathname === ROUTES.trie}
               text="Trie"
             />
-            <h4 className="código-center">Playground</h4>
+            <h4 className="código-center">Problems</h4>
+            <NavLink
+              onClick={handleNavItemClick(ROUTES.twoSum)}
+              isActive={pathname === ROUTES.twoSum}
+              text="Two sum"
+            />
             <NavLink
               onClick={handleNavItemClick(ROUTES.zigzag)}
               isActive={pathname === ROUTES.zigzag}

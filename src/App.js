@@ -30,8 +30,9 @@ import { MODAL_ID } from "./const/ids";
 import Nav from "./nav";
 import Portfolio from "./portfolio";
 import ContextApi from "./contextApi";
-import Trie from "./trie";
 import LinkedList from "./linkedList";
+import Trie from "./trie";
+import TwoSum from "./twoSum";
 import ZigZag from "./zigZag";
 
 library.add(
@@ -76,6 +77,7 @@ const App = () => {
           render={() => <LinkedList {...props} />}
         />
         <Route path={ROUTES.trie} render={() => <Trie {...props} />} />
+        <Route path={ROUTES.twoSum} render={() => <TwoSum {...props} />} />
         <Route path={ROUTES.zigzag} render={() => <ZigZag {...props} />} />
         <Route path="/auth" component={() => <div>Auth file</div>} />
         <Route path="/contextApi" component={ContextApi} />
