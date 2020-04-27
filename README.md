@@ -17,6 +17,12 @@ URL: https://chochstrasser.github.io
 1. [Linked list](https://chochstrasser.github.io/#/linked-list)
 2. [Trie](https://chochstrasser.github.io/#/trie)
 
+#### Problems
+
+1. [Two sum](https://chochstrasser.github.io/#/twoSum)
+2. [Add two numbers](https://chochstrasser.github.io/#/add-two-numbers)
+3. [Zig zag conversion](https://chochstrasser.github.io/#/zigzag-conversion)
+
 #### Making Changes
 
 1. source branch acts like master branch. So branch away using source, and merge your branches into source as needed.

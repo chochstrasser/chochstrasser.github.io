@@ -33,6 +33,7 @@ import ContextApi from "./contextApi";
 import LinkedList from "./linkedList";
 import Trie from "./trie";
 import TwoSum from "./twoSum";
+import AddTwoNumbers from "./addTwoNumbers";
 import ZigZag from "./zigZag";
 
 library.add(
@@ -78,6 +79,10 @@ const App = () => {
         />
         <Route path={ROUTES.trie} render={() => <Trie {...props} />} />
         <Route path={ROUTES.twoSum} render={() => <TwoSum {...props} />} />
+        <Route
+          path={ROUTES.addTwoNumbers}
+          render={() => <AddTwoNumbers {...props} />}
+        />
         <Route path={ROUTES.zigzag} render={() => <ZigZag {...props} />} />
         <Route path="/auth" component={() => <div>Auth file</div>} />
         <Route path="/contextApi" component={ContextApi} />
