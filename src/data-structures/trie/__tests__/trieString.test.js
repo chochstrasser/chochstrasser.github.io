@@ -1,4 +1,4 @@
-import Trie from "../../utils/trie";
+import Trie from "../../../utils/trie";
 import { TrieDataStrings } from "../__test_data__/trieTestData";
 
 describe("Trie", () => {

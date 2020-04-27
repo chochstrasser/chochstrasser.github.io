@@ -1,4 +1,4 @@
-import LinkedList from "../../utils/linkedList";
+import LinkedList from "../../../utils/linkedList";
 import { LinkedListDataStrings } from "../__test_data__/linkedListTestData";
 
 describe("Linked List", () => {

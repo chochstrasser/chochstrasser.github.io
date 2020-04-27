@@ -1,4 +1,4 @@
-import twoSum from "../../utils/twoSum";
+import twoSum from "../../../utils/twoSum";
 
 describe("Two sum", () => {
   it("should return [0,1]", () => {

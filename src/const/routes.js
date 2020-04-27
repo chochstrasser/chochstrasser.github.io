@@ -1,4 +1,4 @@
-export const ROUTES = {
+const ROUTES = {
   default: "/",
   trie: "/trie",
   linkedList: "/linked-list",
@@ -6,3 +6,5 @@ export const ROUTES = {
   addTwoNumbers: "/add-two-numbers",
   zigzag: "/zigzag-conversion",
 };
+
+export default ROUTES;
