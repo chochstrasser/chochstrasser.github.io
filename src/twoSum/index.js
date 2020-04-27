@@ -1,16 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import LinkedListCode from "./linkedListCode";
-import LinkedListRef from "./linkedListRef";
+import TwoSumCode from "./twoSumCode";
+import TwoSumRef from "./twoSumRef";
 import { useHistory } from "react-router-dom";
-import LinkedListDetail from "./linkedListDetail";
+import TwoSumDetail from "./twoSumDetail";
 import { ROUTES } from "../const/routes";
 
 const Wrapper = styled.div`
   max-width: 1400px;
 `;
 
-const LinkedList = ({ showModal }) => {
+const TwoSum = ({ showModal }) => {
   const history = useHistory();
 
   const handleClick = (path) => () => {
@@ -26,27 +26,11 @@ const LinkedList = ({ showModal }) => {
     <Wrapper className="código-content código-white">
       <div className="código-container">
         <h1 className="código-xxxlarge">
-          <b>Linked list</b>
+          <b>Two sum</b>
         </h1>
-        <LinkedListDetail />
-        <LinkedListRef />
-        <h3>Operations</h3>
-        <p>What can a linked list do?</p>
-        <ol>
-          <li>insert</li>
-          <li>removeFirst</li>
-          <li>search</li>
-          <li>display</li>
-          <li>removeAt</li>
-        </ol>
-        <h3>Types</h3>
-        <p>There are many linked list types. here are a few?</p>
-        <ol>
-          <li>singly</li>
-          <li>doubly</li>
-          <li>circular</li>
-        </ol>
-        <LinkedListCode />
+        <TwoSumDetail />
+        <TwoSumRef />
+        <TwoSumCode />
       </div>
       <footer className="código-padding-64 código-white">
         <div className="código-bar">
@@ -58,7 +42,7 @@ const LinkedList = ({ showModal }) => {
           </button>
           <button
             className="código-button código-right código-teal código-hover-teal"
-            onClick={handleClick(ROUTES.trie)}
+            onClick={handleClick(ROUTES.zigzag)}
           >
             Next ❯
           </button>
@@ -68,4 +52,4 @@ const LinkedList = ({ showModal }) => {
   );
 };
 
-export default LinkedList;
+export default TwoSum;
