@@ -1,16 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import AddTwoNumbersCode from "./addTwoNumbersCode";
-import AddTwoNumbersRef from "./addTwoNumbersRef";
+import LinkedListCode from "./linkedListCode";
+import LinkedListRef from "./linkedListRef";
 import { useHistory } from "react-router-dom";
-import AddTwoNumbersDetail from "./addTwoNumbersDetail";
-import { ROUTES } from "../const/routes";
+import LinkedListDetail from "./linkedListDetail";
+import ROUTES from "../../const/routes";
 
 const Wrapper = styled.div`
   max-width: 1400px;
 `;
 
-const TwoSum = ({ showModal }) => {
+const LinkedList = ({ showModal }) => {
   const history = useHistory();
 
   const handleClick = (path) => () => {
@@ -26,23 +26,39 @@ const TwoSum = ({ showModal }) => {
     <Wrapper className="código-content código-white">
       <div className="código-container">
         <h1 className="código-xxxlarge">
-          <b>Add two numbers</b>
+          <b>Linked list</b>
         </h1>
-        <AddTwoNumbersDetail />
-        <AddTwoNumbersRef />
-        <AddTwoNumbersCode />
+        <LinkedListDetail />
+        <LinkedListRef />
+        <h3>Operations</h3>
+        <p>What can a linked list do?</p>
+        <ol>
+          <li>insert</li>
+          <li>removeFirst</li>
+          <li>search</li>
+          <li>display</li>
+          <li>removeAt</li>
+        </ol>
+        <h3>Types</h3>
+        <p>There are many linked list types. here are a few?</p>
+        <ol>
+          <li>singly</li>
+          <li>doubly</li>
+          <li>circular</li>
+        </ol>
+        <LinkedListCode />
       </div>
       <footer className="código-padding-64 código-white">
         <div className="código-bar">
           <button
             className="código-button código-left código-teal código-hover-teal"
-            onClick={handleClick(ROUTES.twoSum)}
+            onClick={handleClick(ROUTES.default)}
           >
             ❮ Previous
           </button>
           <button
             className="código-button código-right código-teal código-hover-teal"
-            onClick={handleClick(ROUTES.zigzag)}
+            onClick={handleClick(ROUTES.trie)}
           >
             Next ❯
           </button>
@@ -52,4 +68,4 @@ const TwoSum = ({ showModal }) => {
   );
 };
 
-export default TwoSum;
+export default LinkedList;

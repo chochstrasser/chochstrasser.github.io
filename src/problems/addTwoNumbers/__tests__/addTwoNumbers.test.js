@@ -1,4 +1,4 @@
-import AddTwoNumbers, { ListNode } from "../../utils/addTwoNumbers";
+import AddTwoNumbers, { ListNode } from "../../../utils/addTwoNumbers";
 
 describe("Add two numbers", () => {
   it("should return [0,1]", () => {

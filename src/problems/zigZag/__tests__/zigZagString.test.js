@@ -1,7 +1,7 @@
 import {
   ZigZagConversionOne,
   ZigZagConversionTwo,
-} from "../../utils/zigZagConversion";
+} from "../../../utils/zigZagConversion";
 
 describe("ZigZag conversion one", () => {
   it("should return PAHNAPLSIIGYIR", () => {

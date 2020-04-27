@@ -24,12 +24,12 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 
-import { ROUTES } from "./const/routes";
+import ROUTES from "./const/routes";
 import { MODAL_ID } from "./const/ids";
 
 import Nav from "./nav";
+import FourZeroFour from "./404.js";
 import Portfolio from "./portfolio";
-import ContextApi from "./contextApi";
 import LinkedList from "./linkedList";
 import Trie from "./trie";
 import TwoSum from "./twoSum";
@@ -84,10 +84,7 @@ const App = () => {
           render={() => <AddTwoNumbers {...props} />}
         />
         <Route path={ROUTES.zigzag} render={() => <ZigZag {...props} />} />
-        <Route path="/auth" component={() => <div>Auth file</div>} />
-        <Route path="/contextApi" component={ContextApi} />
-        {/* <AuthorizedRoute path="/projects" component={AuthorizedLayout} /> */}
-        <Route component={() => <div>404 File Not Found</div>} />
+        <Route component={FourZeroFour} />
       </Switch>
       <Nav
         handleClick={handleClick}

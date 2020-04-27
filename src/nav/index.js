@@ -1,26 +1,8 @@
 import React from "react";
 import { useHistory, useLocation } from "react-router-dom";
-import styled from "styled-components";
-import { ROUTES } from "../const/routes";
-
-const FixedButton = styled.button`
-  position: fixed;
-  top: 2rem;
-  right: 2rem;
-`;
-
-const NavLink = ({ onClick, isActive, text }) => (
-  <button
-    className={`código-button código-block ${
-      isActive
-        ? "código-khaki código-hover-khaki"
-        : "código-white código-hover-white"
-    }`}
-    onClick={onClick}
-  >
-    {text}
-  </button>
-);
+import ROUTES from "../const/routes";
+import NavLink from "./nav-link";
+import { FixedButton } from "./nav-style";
 
 const Nav = ({ handleClick, elementId, setShowModal }) => {
   const history = useHistory();
