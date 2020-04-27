@@ -79,6 +79,11 @@ const Nav = ({ handleClick, elementId, setShowModal }) => {
               text="Two sum"
             />
             <NavLink
+              onClick={handleNavItemClick(ROUTES.addTwoNumbers)}
+              isActive={pathname === ROUTES.addTwoNumbers}
+              text="Add two numbers"
+            />
+            <NavLink
               onClick={handleNavItemClick(ROUTES.zigzag)}
               isActive={pathname === ROUTES.zigzag}
               text="ZigZag conversion"
