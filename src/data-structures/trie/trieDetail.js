@@ -1,5 +1,5 @@
 import React from "react";
-import TrieImage from "../images/trie.svg";
+import TrieImage from "../../images/trie.svg";
 
 const TrieDetail = () => {
   return (

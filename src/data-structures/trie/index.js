@@ -4,7 +4,7 @@ import TrieCode from "./trieCode";
 import TrieRef from "./trieRef";
 import { useHistory } from "react-router-dom";
 import TrieDetail from "./trieDetail";
-import ROUTES from "../const/routes";
+import ROUTES from "../../const/routes";
 
 const Wrapper = styled.div`
   max-width: 1400px;

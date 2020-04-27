@@ -4,7 +4,7 @@ import AddTwoNumbersCode from "./addTwoNumbersCode";
 import AddTwoNumbersRef from "./addTwoNumbersRef";
 import { useHistory } from "react-router-dom";
 import AddTwoNumbersDetail from "./addTwoNumbersDetail";
-import ROUTES from "../const/routes";
+import ROUTES from "../../const/routes";
 
 const Wrapper = styled.div`
   max-width: 1400px;

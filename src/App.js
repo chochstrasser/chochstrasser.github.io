@@ -30,11 +30,11 @@ import { MODAL_ID } from "./const/ids";
 import Nav from "./nav";
 import FourZeroFour from "./404.js";
 import Portfolio from "./portfolio";
-import LinkedList from "./linkedList";
-import Trie from "./trie";
-import TwoSum from "./twoSum";
-import AddTwoNumbers from "./addTwoNumbers";
-import ZigZag from "./zigZag";
+import LinkedList from "./data-structures/linkedList";
+import Trie from "./data-structures/trie";
+import TwoSum from "./problems/twoSum";
+import AddTwoNumbers from "./problems/addTwoNumbers";
+import ZigZag from "./problems/zigZag";
 
 library.add(
   fab,

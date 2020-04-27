@@ -1,5 +1,5 @@
 import React from "react";
-import LinkedListImage from "../images/linkedlist.png";
+import LinkedListImage from "../../images/linkedlist.png";
 
 const LinkedListDetail = () => {
   return (
