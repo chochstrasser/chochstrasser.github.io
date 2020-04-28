@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useHistory, useLocation } from "react-router-dom";
 import ROUTES from "../const/routes";
 import NavLink from "./nav-link";
-import { FixedButton } from "./nav-style";
+import { FixedButton, FixedButtonBelow } from "./nav-style";
+import { themeContext } from "../context/theme-context";
 
 const Nav = ({ handleClick, elementId, setShowModal }) => {
+  const { themeLight, onChangeTheme } = useContext(themeContext);
   const history = useHistory();
   const location = useLocation();
   const { pathname } = location;
@@ -19,10 +21,24 @@ const Nav = ({ handleClick, elementId, setShowModal }) => {
     <>
       <FixedButton
         onClick={handleClick("block")}
-        className="código-button código-round código-teal código-hover-teal"
+        className={`código-button código-round ${
+          themeLight
+            ? "código-teal código-hover-teal"
+            : "código-light-grey código-hover-light-grey"
+        }`}
       >
         ☰
       </FixedButton>
+      <FixedButtonBelow
+        className={`código-button código-round ${
+          themeLight
+            ? "código-teal código-hover-teal"
+            : "código-light-grey código-hover-light-grey"
+        }`}
+        onClick={() => onChangeTheme(!themeLight)}
+      >
+        {`${themeLight ? "light" : "dark"}`}
+      </FixedButtonBelow>
       <div
         id={elementId}
         className="código-modal código-margin-none código-padding-none"

@@ -6,4 +6,8 @@ const FixedButton = styled.button`
   right: 2rem;
 `;
 
-export { FixedButton };
+const FixedButtonBelow = styled(FixedButton)`
+  top: 5.7rem;
+`;
+
+export { FixedButton, FixedButtonBelow };
