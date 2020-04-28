@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Switch, Route } from "react-router-dom";
 import Router from "./utils/Router";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -23,7 +23,7 @@ import {
   faCogs,
 } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
-
+import { themeContext } from "./context/theme-context";
 import ROUTES from "./const/routes";
 import { MODAL_ID } from "./const/ids";
 
@@ -56,6 +56,7 @@ library.add(
 );
 
 const App = () => {
+  const { themeLight } = useContext(themeContext);
   const [showModal, setShowModal] = useState(false);
 
   const handleClick = (display) => () => {
@@ -66,32 +67,34 @@ const App = () => {
   const props = { showModal };
 
   return (
-    <Router>
-      <Switch>
-        <Route
-          exact
-          path={ROUTES.default}
-          render={() => <Portfolio {...props} />}
+    <div className={themeLight ? "código-light-grey" : "código-dark-grey"}>
+      <Router>
+        <Switch>
+          <Route
+            exact
+            path={ROUTES.default}
+            render={() => <Portfolio {...props} />}
+          />
+          <Route
+            path={ROUTES.linkedList}
+            render={() => <LinkedList {...props} />}
+          />
+          <Route path={ROUTES.trie} render={() => <Trie {...props} />} />
+          <Route path={ROUTES.twoSum} render={() => <TwoSum {...props} />} />
+          <Route
+            path={ROUTES.addTwoNumbers}
+            render={() => <AddTwoNumbers {...props} />}
+          />
+          <Route path={ROUTES.zigzag} render={() => <ZigZag {...props} />} />
+          <Route component={FourZeroFour} />
+        </Switch>
+        <Nav
+          handleClick={handleClick}
+          elementId={MODAL_ID}
+          setShowModal={setShowModal}
         />
-        <Route
-          path={ROUTES.linkedList}
-          render={() => <LinkedList {...props} />}
-        />
-        <Route path={ROUTES.trie} render={() => <Trie {...props} />} />
-        <Route path={ROUTES.twoSum} render={() => <TwoSum {...props} />} />
-        <Route
-          path={ROUTES.addTwoNumbers}
-          render={() => <AddTwoNumbers {...props} />}
-        />
-        <Route path={ROUTES.zigzag} render={() => <ZigZag {...props} />} />
-        <Route component={FourZeroFour} />
-      </Switch>
-      <Nav
-        handleClick={handleClick}
-        elementId={MODAL_ID}
-        setShowModal={setShowModal}
-      />
-    </Router>
+      </Router>
+    </div>
   );
 };
 
