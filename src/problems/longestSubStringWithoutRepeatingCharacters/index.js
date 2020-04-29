@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import AddTwoNumbersCode from "./addTwoNumbersCode";
-import AddTwoNumbersRef from "./addTwoNumbersRef";
 import { useHistory } from "react-router-dom";
-import AddTwoNumbersDetail from "./addTwoNumbersDetail";
+import Code from "./code";
+import Reference from "./reference";
+import Detail from "./detail";
 import ROUTES from "../../const/routes";
 
 const Wrapper = styled.div`
@@ -26,25 +26,23 @@ const TwoSum = ({ showModal }) => {
     <Wrapper className="código-content código-white">
       <div className="código-container">
         <h1 className="código-xxxlarge">
-          <b>Add two numbers</b>
+          <b>Longest substring without repeating characters</b>
         </h1>
-        <AddTwoNumbersDetail />
-        <AddTwoNumbersRef />
-        <AddTwoNumbersCode />
+        <Detail />
+        <Reference />
+        <Code />
       </div>
       <footer className="código-padding-64 código-white">
         <div className="código-bar">
           <button
             className="código-button código-left código-teal código-hover-teal"
-            onClick={handleClick(ROUTES.twoSum)}
+            onClick={handleClick(ROUTES.addTwoNumbers)}
           >
             ❮ Previous
           </button>
           <button
             className="código-button código-right código-teal código-hover-teal"
-            onClick={handleClick(
-              ROUTES.longestSubstringWithoutRepeatingCharacters
-            )}
+            onClick={handleClick(ROUTES.zigzag)}
           >
             Next ❯
           </button>
