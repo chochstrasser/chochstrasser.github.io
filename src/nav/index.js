@@ -82,6 +82,15 @@ const Nav = ({ handleClick, elementId, setShowModal }) => {
               text="Add two numbers"
             />
             <NavLink
+              onClick={handleNavItemClick(
+                ROUTES.longestSubstringWithoutRepeatingCharacters
+              )}
+              isActive={
+                pathname === ROUTES.longestSubstringWithoutRepeatingCharacters
+              }
+              text="Longest substring without repeating characters"
+            />
+            <NavLink
               onClick={handleNavItemClick(ROUTES.zigzag)}
               isActive={pathname === ROUTES.zigzag}
               text="ZigZag conversion"

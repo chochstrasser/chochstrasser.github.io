@@ -34,6 +34,7 @@ import LinkedList from "./data-structures/linkedList";
 import Trie from "./data-structures/trie";
 import TwoSum from "./problems/twoSum";
 import AddTwoNumbers from "./problems/addTwoNumbers";
+import LongestSubStringWithoutRepeatingCharacters from "./problems/longestSubStringWithoutRepeatingCharacters";
 import ZigZag from "./problems/zigZag";
 
 library.add(
@@ -84,6 +85,12 @@ const App = () => {
           <Route
             path={ROUTES.addTwoNumbers}
             render={() => <AddTwoNumbers {...props} />}
+          />
+          <Route
+            path={ROUTES.longestSubstringWithoutRepeatingCharacters}
+            render={() => (
+              <LongestSubStringWithoutRepeatingCharacters {...props} />
+            )}
           />
           <Route path={ROUTES.zigzag} render={() => <ZigZag {...props} />} />
           <Route component={FourZeroFour} />
