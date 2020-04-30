@@ -36,6 +36,7 @@ import TwoSum from "./problems/twoSum";
 import AddTwoNumbers from "./problems/addTwoNumbers";
 import LongestSubStringWithoutRepeatingCharacters from "./problems/longestSubStringWithoutRepeatingCharacters";
 import ZigZag from "./problems/zigZag";
+import TicTacToe from "./games/tic-tac-toe";
 
 library.add(
   fab,
@@ -93,6 +94,10 @@ const App = () => {
             )}
           />
           <Route path={ROUTES.zigzag} render={() => <ZigZag {...props} />} />
+          <Route
+            path={ROUTES["tic-tac-toe"]}
+            render={() => <TicTacToe {...props} />}
+          />
           <Route component={FourZeroFour} />
         </Switch>
         <Nav

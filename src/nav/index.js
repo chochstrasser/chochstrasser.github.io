@@ -95,6 +95,12 @@ const Nav = ({ handleClick, elementId, setShowModal }) => {
               isActive={pathname === ROUTES.zigzag}
               text="ZigZag conversion"
             />
+            <h4 className="código-center">Game</h4>
+            <NavLink
+              onClick={handleNavItemClick(ROUTES["tic-tac-toe"])}
+              isActive={pathname === ROUTES["tic-tac-toe"]}
+              text="Tic-Tac-Toe"
+            />
           </div>
         </div>
       </div>

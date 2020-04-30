@@ -7,6 +7,7 @@ const ROUTES = {
   longestSubstringWithoutRepeatingCharacters:
     "/problems/longest-substring-without-repeating-characters",
   zigzag: "/problems/zigzag-conversion",
+  "tic-tac-toe": "/games/tic-tac-toe",
 };
 
 export default ROUTES;
