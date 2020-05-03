@@ -18,7 +18,10 @@ const INITIAL_STATE = {
 const TicTacToe = () => {
   const [state, setState] = useState(INITIAL_STATE);
   const current = state.history[state.stepNumber];
-  const { status, winner } = useCalculateWinner({ ...current });
+  const { status, winner } = useCalculateWinner({
+    ...current,
+    xIsNext: state.xIsNext,
+  });
 
   const handleClick = (i) => {
     const history = state.history.slice(0, state.stepNumber + 1);
@@ -27,6 +30,7 @@ const TicTacToe = () => {
       return;
     }
     squares[i] = state.xIsNext ? "X" : "O";
+    console.log("x is next ", squares[i]);
     setState((prevState) => ({
       ...prevState,
       xIsNext: !prevState.xIsNext,
