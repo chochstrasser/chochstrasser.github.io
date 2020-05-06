@@ -1,16 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import ZigZagCode from "./zigZagCode";
-import ZigZagRef from "./zigZagRef";
+import Code from "./code";
+import Reference from "./reference";
 import { useHistory } from "react-router-dom";
-import ZigZagDetail from "./zigZagDetail";
+import Detail from "./detail";
 import ROUTES from "../../const/routes";
 
 const Wrapper = styled.div`
   max-width: 1400px;
 `;
 
-const ZigZag = ({ showModal }) => {
+const PalindromeNumber = ({ showModal }) => {
   const history = useHistory();
 
   const handleClick = (path) => () => {
@@ -26,25 +26,23 @@ const ZigZag = ({ showModal }) => {
     <Wrapper className="código-content código-white">
       <div className="código-container">
         <h1 className="código-xxxlarge">
-          <b>ZigZag conversion</b>
+          <b>Palindrome number</b>
         </h1>
-        <ZigZagDetail />
-        <ZigZagRef />
-        <ZigZagCode />
+        <Detail />
+        <Reference />
+        <Code />
       </div>
       <footer className="código-padding-64 código-white">
         <div className="código-bar">
           <button
             className="código-button código-left código-teal código-hover-teal"
-            onClick={handleClick(
-              ROUTES.longestSubstringWithoutRepeatingCharacters
-            )}
+            onClick={handleClick(ROUTES.zigzag)}
           >
             ❮ Previous
           </button>
           <button
             className="código-button código-right código-teal código-hover-teal"
-            onClick={handleClick(ROUTES["palindrome-number"])}
+            onClick={handleClick(ROUTES["longest-common-prefix"])}
           >
             Next ❯
           </button>
@@ -54,4 +52,4 @@ const ZigZag = ({ showModal }) => {
   );
 };
 
-export default ZigZag;
+export default PalindromeNumber;

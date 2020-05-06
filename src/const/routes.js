@@ -7,6 +7,8 @@ const ROUTES = {
   longestSubstringWithoutRepeatingCharacters:
     "/problems/longest-substring-without-repeating-characters",
   zigzag: "/problems/zigzag-conversion",
+  "palindrome-number": "/problems/palindrome-number",
+  "longest-common-prefix": "/problems/longest-common-prefix",
   "tic-tac-toe": "/games/tic-tac-toe",
 };
 

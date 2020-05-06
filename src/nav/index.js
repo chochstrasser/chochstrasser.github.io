@@ -95,6 +95,16 @@ const Nav = ({ handleClick, elementId, setShowModal }) => {
               isActive={pathname === ROUTES.zigzag}
               text="ZigZag conversion"
             />
+            <NavLink
+              onClick={handleNavItemClick(ROUTES.palindromeNumber)}
+              isActive={pathname === ROUTES.palindromeNumber}
+              text="Palindrome number"
+            />
+            <NavLink
+              onClick={handleNavItemClick(ROUTES.palindromeNumber)}
+              isActive={pathname === ROUTES.palindromeNumber}
+              text="Longest common prefix"
+            />
             <h4 className="código-center">Game</h4>
             <NavLink
               onClick={handleNavItemClick(ROUTES["tic-tac-toe"])}
