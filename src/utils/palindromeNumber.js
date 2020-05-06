@@ -1,5 +1,5 @@
 const isPalindrome = (x) => {
-  if (x.length === 1) return true;
+  if (x.length <= 1) return true;
   const strArray = [...`${x}`];
   while (strArray.length >= 2) {
     if (strArray.shift() !== strArray.pop()) {
