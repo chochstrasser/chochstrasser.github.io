@@ -1,5 +1,5 @@
 const isPalindrome = (x) => {
-  if (x.length <= 1) return true;
+  if (!x || x?.length === 1) return true;
   const strArray = [...`${x}`];
   while (strArray.length >= 2) {
     if (strArray.shift() !== strArray.pop()) {
@@ -10,6 +10,7 @@ const isPalindrome = (x) => {
 };
 
 export const palindromeNumber = (x) => {
+  if (!x) return true;
   if (x < 0) return false;
   let temp = x;
   let reversed = 0;
