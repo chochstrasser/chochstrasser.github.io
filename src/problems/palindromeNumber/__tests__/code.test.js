@@ -50,7 +50,7 @@ describe("Palindrome Number (numbers only)", () => {
     expect(result).toBeTruthy();
   });
 
-  xit("should return true", () => {
+  it("should return true", () => {
     const result = isPalindrome();
     expect(result).toBeTruthy();
   });
