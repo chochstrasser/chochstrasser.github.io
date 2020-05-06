@@ -36,6 +36,8 @@ import TwoSum from "./problems/twoSum";
 import AddTwoNumbers from "./problems/addTwoNumbers";
 import LongestSubStringWithoutRepeatingCharacters from "./problems/longestSubStringWithoutRepeatingCharacters";
 import ZigZag from "./problems/zigZag";
+import PalindromeNumber from "./problems/palindromeNumber";
+import LongestCommonPrefix from "./problems/longestCommonPrefix";
 import TicTacToe from "./games/tic-tac-toe";
 
 library.add(
@@ -94,6 +96,14 @@ const App = () => {
             )}
           />
           <Route path={ROUTES.zigzag} render={() => <ZigZag {...props} />} />
+          <Route
+            path={ROUTES["palindrome-number"]}
+            render={() => <PalindromeNumber {...props} />}
+          />
+          <Route
+            path={ROUTES["longest-common-prefix"]}
+            render={() => <LongestCommonPrefix {...props} />}
+          />
           <Route
             path={ROUTES["tic-tac-toe"]}
             render={() => <TicTacToe {...props} />}
