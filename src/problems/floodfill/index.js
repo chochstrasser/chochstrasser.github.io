@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import { useHistory } from "react-router-dom";
 import Code from "./code";
 import Reference from "./reference";
-import { useHistory } from "react-router-dom";
 import Detail from "./detail";
 import ROUTES from "../../const/routes";
 
@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   max-width: 1400px;
 `;
 
-const LongestCommonPrefix = ({ showModal }) => {
+const Flatten = ({ showModal }) => {
   const history = useHistory();
 
   const handleClick = (path) => () => {
@@ -26,7 +26,7 @@ const LongestCommonPrefix = ({ showModal }) => {
     <Wrapper className="código-content código-white">
       <div className="código-container">
         <h1 className="código-xxxlarge">
-          <b>Longest common prefix</b>
+          <b>FloodFill</b>
         </h1>
         <Detail />
         <Reference />
@@ -36,13 +36,13 @@ const LongestCommonPrefix = ({ showModal }) => {
         <div className="código-bar">
           <button
             className="código-button código-left código-teal código-hover-teal"
-            onClick={handleClick(ROUTES["palindrome-number"])}
+            onClick={handleClick(ROUTES.flatten)}
           >
             ❮ Previous
           </button>
           <button
             className="código-button código-right código-teal código-hover-teal"
-            onClick={handleClick(ROUTES.flatten)}
+            onClick={handleClick(ROUTES.default)}
           >
             Next ❯
           </button>
@@ -52,4 +52,4 @@ const LongestCommonPrefix = ({ showModal }) => {
   );
 };
 
-export default LongestCommonPrefix;
+export default Flatten;

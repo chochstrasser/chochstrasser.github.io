@@ -105,6 +105,16 @@ const Nav = ({ handleClick, elementId, setShowModal }) => {
               isActive={pathname === ROUTES["longest-common-prefix"]}
               text="Longest common prefix"
             />
+            <NavLink
+              onClick={handleNavItemClick(ROUTES.flatten)}
+              isActive={pathname === ROUTES.flatten}
+              text="Flatten"
+            />
+            <NavLink
+              onClick={handleNavItemClick(ROUTES.floodFill)}
+              isActive={pathname === ROUTES.floodFill}
+              text="Flood Fill"
+            />
             <h4 className="código-center">Game</h4>
             <NavLink
               onClick={handleNavItemClick(ROUTES["tic-tac-toe"])}
