@@ -9,6 +9,8 @@ const ROUTES = {
   zigzag: "/problems/zigzag-conversion",
   "palindrome-number": "/problems/palindrome-number",
   "longest-common-prefix": "/problems/longest-common-prefix",
+  flatten: "/problems/flatten",
+  floodFill: "/problems/floodFill",
   "tic-tac-toe": "/games/tic-tac-toe",
 };
 
