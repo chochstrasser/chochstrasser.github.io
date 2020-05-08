@@ -39,7 +39,7 @@ import ZigZag from "./problems/zigZag";
 import PalindromeNumber from "./problems/palindromeNumber";
 import LongestCommonPrefix from "./problems/longestCommonPrefix";
 import Flatten from "./problems/flatten";
-import FloodFill from "./problems/floodfill";
+import FloodFill from "./problems/floodFill";
 import TicTacToe from "./games/tic-tac-toe";
 
 library.add(
