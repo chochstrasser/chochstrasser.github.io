@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   max-width: 1400px;
 `;
 
-const FloodFill = ({ showModal }) => {
+const MedianOfTwoSortedArrays = ({ showModal }) => {
   const history = useHistory();
 
   const handleClick = (path) => () => {
@@ -26,7 +26,7 @@ const FloodFill = ({ showModal }) => {
     <Wrapper className="código-content código-white">
       <div className="código-container">
         <h1 className="código-xxxlarge">
-          <b>FloodFill</b>
+          <b>Median of two sorted arrays</b>
         </h1>
         <Detail />
         <Reference />
@@ -52,4 +52,4 @@ const FloodFill = ({ showModal }) => {
   );
 };
 
-export default FloodFill;
+export default MedianOfTwoSortedArrays;

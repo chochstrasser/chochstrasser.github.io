@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import AddTwoNumbersCode from "./addTwoNumbersCode";
-import AddTwoNumbersRef from "./addTwoNumbersRef";
+import Code from "./code";
+import Reference from "./reference";
 import { useHistory } from "react-router-dom";
-import AddTwoNumbersDetail from "./addTwoNumbersDetail";
+import Detail from "./detail";
 import ROUTES from "../../const/routes";
 
 const Wrapper = styled.div`
@@ -28,22 +28,22 @@ const TwoSum = ({ showModal }) => {
         <h1 className="código-xxxlarge">
           <b>Add two numbers</b>
         </h1>
-        <AddTwoNumbersDetail />
-        <AddTwoNumbersRef />
-        <AddTwoNumbersCode />
+        <Detail />
+        <Reference />
+        <Code />
       </div>
       <footer className="código-padding-64 código-white">
         <div className="código-bar">
           <button
             className="código-button código-left código-teal código-hover-teal"
-            onClick={handleClick(ROUTES.twoSum)}
+            onClick={handleClick(ROUTES.problems.twoSum)}
           >
             ❮ Previous
           </button>
           <button
             className="código-button código-right código-teal código-hover-teal"
             onClick={handleClick(
-              ROUTES.longestSubstringWithoutRepeatingCharacters
+              ROUTES.problems.longestSubstringWithoutRepeatingCharacters
             )}
           >
             Next ❯

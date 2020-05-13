@@ -1,6 +1,6 @@
-import React from "./node_modules/react";
-import styled from "./node_modules/styled-components";
-import { useHistory } from "./node_modules/react-router-dom";
+import React from "react";
+import styled from "styled-components";
+import { useHistory } from "react-router-dom";
 import Code from "./code";
 import Reference from "./reference";
 import Detail from "./detail";
