@@ -10,7 +10,7 @@ const Wrapper = styled.div`
   max-width: 1400px;
 `;
 
-const FloodFill = ({ showModal }) => {
+const Flatten = ({ showModal }) => {
   const history = useHistory();
 
   const handleClick = (path) => () => {
@@ -36,7 +36,7 @@ const FloodFill = ({ showModal }) => {
         <div className="código-bar">
           <button
             className="código-button código-left código-teal código-hover-teal"
-            onClick={handleClick(ROUTES.problems.flatten)}
+            onClick={handleClick(ROUTES.flatten)}
           >
             ❮ Previous
           </button>
@@ -52,4 +52,4 @@ const FloodFill = ({ showModal }) => {
   );
 };
 
-export default FloodFill;
+export default Flatten;

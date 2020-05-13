@@ -37,7 +37,7 @@ const ZigZag = ({ showModal }) => {
           <button
             className="código-button código-left código-teal código-hover-teal"
             onClick={handleClick(
-              ROUTES.longestSubstringWithoutRepeatingCharacters
+              ROUTES.problems.longestSubstringWithoutRepeatingCharacters
             )}
           >
             ❮ Previous
