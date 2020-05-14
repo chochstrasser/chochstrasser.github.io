@@ -36,13 +36,13 @@ const LongestCommonPrefix = ({ showModal }) => {
         <div className="código-bar">
           <button
             className="código-button código-left código-teal código-hover-teal"
-            onClick={handleClick(ROUTES["palindrome-number"])}
+            onClick={handleClick(ROUTES.problems["roman-to-integer"])}
           >
             ❮ Previous
           </button>
           <button
             className="código-button código-right código-teal código-hover-teal"
-            onClick={handleClick(ROUTES.flatten)}
+            onClick={handleClick(ROUTES.problems["valid-parentheses"])}
           >
             Next ❯
           </button>

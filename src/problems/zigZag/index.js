@@ -37,14 +37,14 @@ const ZigZag = ({ showModal }) => {
           <button
             className="código-button código-left código-teal código-hover-teal"
             onClick={handleClick(
-              ROUTES.problems.longestSubstringWithoutRepeatingCharacters
+              ROUTES.problems["median-of-two-sorted-arrays"]
             )}
           >
             ❮ Previous
           </button>
           <button
             className="código-button código-right código-teal código-hover-teal"
-            onClick={handleClick(ROUTES["palindrome-number"])}
+            onClick={handleClick(ROUTES.problems["reverse-integer"])}
           >
             Next ❯
           </button>
