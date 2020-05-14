@@ -36,13 +36,13 @@ const Flatten = ({ showModal }) => {
         <div className="código-bar">
           <button
             className="código-button código-left código-teal código-hover-teal"
-            onClick={handleClick(ROUTES.flatten)}
+            onClick={handleClick(ROUTES.problems["valid-parentheses"])}
           >
             ❮ Previous
           </button>
           <button
             className="código-button código-right código-teal código-hover-teal"
-            onClick={handleClick(ROUTES.default)}
+            onClick={handleClick(ROUTES.problems.flatten)}
           >
             Next ❯
           </button>

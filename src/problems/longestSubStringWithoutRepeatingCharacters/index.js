@@ -36,13 +36,15 @@ const TwoSum = ({ showModal }) => {
         <div className="código-bar">
           <button
             className="código-button código-left código-teal código-hover-teal"
-            onClick={handleClick(ROUTES.addTwoNumbers)}
+            onClick={handleClick(ROUTES.problems.addTwoNumbers)}
           >
             ❮ Previous
           </button>
           <button
             className="código-button código-right código-teal código-hover-teal"
-            onClick={handleClick(ROUTES.zigzag)}
+            onClick={handleClick(
+              ROUTES.problems["median-of-two-sorted-arrays"]
+            )}
           >
             Next ❯
           </button>

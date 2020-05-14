@@ -14,15 +14,15 @@ const Reference = () => {
       <div className="código-section">
         <ReferenceButton
           className="código-button código-hover-teal código-teal"
-          href="https://jamesonyu.wordpress.com/2015/05/01/flood-fill-algorithm-javascript/"
+          href="https://www.youtube.com/watch?v=HGgdcKbC5ro"
         >
-          JAMESON YU
+          YouTube
         </ReferenceButton>
         <ReferenceButton
           className="código-button código-hover-teal código-teal"
-          href="https://en.wikipedia.org/wiki/Flood_fill"
+          href="https://www.programcreek.com/2012/12/leetcode-median-of-two-sorted-arrays-java/"
         >
-          Wikipedia
+          Program creek
         </ReferenceButton>
       </div>
     </>

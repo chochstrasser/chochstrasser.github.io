@@ -42,7 +42,7 @@ const TwoSum = ({ showModal }) => {
           </button>
           <button
             className="código-button código-right código-teal código-hover-teal"
-            onClick={handleClick(ROUTES.addTwoNumbers)}
+            onClick={handleClick(ROUTES.problems.addTwoNumbers)}
           >
             Next ❯
           </button>

@@ -8,8 +8,10 @@ const Detail = () => {
       <div className="content__u3I1 question-content__JfgR">
         <div>
           <p>
-            You are given an array either 1D or 2D. You are to determine the
-            area connected to a given node.
+            There are two sorted arrays nums1 and nums2 of size m and n
+            respectively. Find the median of the two sorted arrays. The overall
+            run time complexity should be O(log (m+n)). You may assume nums1 and
+            nums2 cannot be both empty.
           </p>
 
           <strong>Example 1:</strong>
@@ -19,8 +21,10 @@ const Detail = () => {
             style={atomOneDark}
             wrapLines={true}
           >
-            {`Input: 2D array: [[0, 0, 0, 0, 1, 1, 0, 0, 0, 0]], x: 0, y: 4
-Output: 2`}
+            {`nums1 = [1, 3]
+nums2 = [2]
+
+The median is 2.0`}
           </SyntaxHighlighter>
         </div>
 
@@ -31,13 +35,10 @@ Output: 2`}
           style={atomOneDark}
           wrapLines={true}
         >
-          {`Input: 2D array:  [
-  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 1, 1, 0, 0, 0, 0],
-  [0, 0, 0, 0, 1, 1, 1, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-], x: 2, y: 6
-Output: 5`}
+          {`nums1 = [1, 2]
+nums2 = [3, 4]
+
+The median is (2 + 3)/2 = 2.5`}
         </SyntaxHighlighter>
       </div>
     </>

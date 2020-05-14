@@ -36,13 +36,13 @@ const PalindromeNumber = ({ showModal }) => {
         <div className="código-bar">
           <button
             className="código-button código-left código-teal código-hover-teal"
-            onClick={handleClick(ROUTES.zigzag)}
+            onClick={handleClick(ROUTES.problems.zigzag)}
           >
             ❮ Previous
           </button>
           <button
             className="código-button código-right código-teal código-hover-teal"
-            onClick={handleClick(ROUTES["longest-common-prefix"])}
+            onClick={handleClick(ROUTES.problems["longest-common-prefix"])}
           >
             Next ❯
           </button>

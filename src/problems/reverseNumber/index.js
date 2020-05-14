@@ -36,13 +36,13 @@ const Flatten = ({ showModal }) => {
         <div className="código-bar">
           <button
             className="código-button código-left código-teal código-hover-teal"
-            onClick={handleClick(ROUTES.flatten)}
+            onClick={handleClick(ROUTES.problems.zigzag)}
           >
             ❮ Previous
           </button>
           <button
             className="código-button código-right código-teal código-hover-teal"
-            onClick={handleClick(ROUTES.default)}
+            onClick={handleClick(ROUTES.problems["palindrome-number"])}
           >
             Next ❯
           </button>
