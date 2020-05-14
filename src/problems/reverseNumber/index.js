@@ -26,7 +26,7 @@ const Flatten = ({ showModal }) => {
     <Wrapper className="código-content código-white">
       <div className="código-container">
         <h1 className="código-xxxlarge">
-          <b>FloodFill</b>
+          <b>Reverse integer</b>
         </h1>
         <Detail />
         <Reference />
