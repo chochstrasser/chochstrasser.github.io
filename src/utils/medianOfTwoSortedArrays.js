@@ -1,4 +1,4 @@
-const findMedianSortedArrays = (nums1, nums2) => {
+export const findMedianSortedArrays = (nums1, nums2) => {
   const nums3 = [...nums1, ...nums2].sort((a, b) => a - b);
   const isOdd = nums3.length % 2 === 1;
   const firstNum = nums3[Math.floor((nums3.length - 1) / 2)];
@@ -6,4 +6,41 @@ const findMedianSortedArrays = (nums1, nums2) => {
   return isOdd ? firstNum : (firstNum + secondNum) / 2;
 };
 
-export default findMedianSortedArrays;
+export const findMedianSortedArraysBinarySearch = (nums1, nums2) => {
+  if (nums2.length < nums1.length) {
+    return findMedianSortedArraysBinarySearch(nums2, nums1);
+  }
+  let start = 0;
+  let end = nums1.length;
+
+  while (start <= end) {
+    const partitionX = (end + start) >> 1;
+    const partitionY = ((nums1.length + nums2.length + 1) >> 1) - partitionX;
+
+    const maxLeftX =
+      partitionX === 0 ? Number.NEGATIVE_INFINITY : nums1[partitionX - 1];
+    const maxLeftY =
+      partitionY === 0 ? Number.NEGATIVE_INFINITY : nums2[partitionY - 1];
+
+    const minRightX =
+      partitionX === nums1.length
+        ? Number.POSITIVE_INFINITY
+        : nums1[partitionX];
+    const minRightY =
+      partitionY === nums2.length
+        ? Number.POSITIVE_INFINITY
+        : nums2[partitionY];
+
+    if (maxLeftX <= minRightY && maxLeftY <= minRightX) {
+      const lowMax = Math.max(maxLeftX, maxLeftY);
+      if ((nums1.length + nums2.length) % 2 === 1) {
+        return lowMax;
+      }
+      return (lowMax + Math.min(minRightX, minRightY)) / 2;
+    } else if (maxLeftX < minRightY) {
+      start = partitionX + 1;
+    } else {
+      end = partitionX - 1;
+    }
+  }
+};

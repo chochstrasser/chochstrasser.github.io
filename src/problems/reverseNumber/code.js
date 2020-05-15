@@ -2,26 +2,16 @@ import React from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
-const IMPLEMENTATION = `const floodFillAlgorithm = (list, x, y) => {
-  let count = 0;
-  let visited = {};
-  const floodFill = (list, x, y) => {
-    if (!list[x] || !list[x][y]) return;
-    if (
-      list[x][y] === 0 ||
-      (typeof visited[x + "," + y] !== "undefined" && visited[x + "," + y])
-    )
-      return;
-    count++;
-    visited[x + "," + y] = true;
-    floodFill(list, x, y - 1);
-    floodFill(list, x, y + 1);
-    floodFill(list, x - 1, y);
-    floodFill(list, x + 1, y);
-    return count;
-  };
-  const result = floodFill(list, x, y);
-  return result;
+const IMPLEMENTATION = `const reverseNumber = (x) => {
+  let temp = Math.abs(x);
+  let reversed = 0;
+  while (temp !== 0) {
+    const r = temp % 10;
+    reversed = reversed * 10 + r;
+    temp = Math.floor(temp / 10);
+  }
+  if (reversed > 2 ** 31 || reversed < 2 ** 31 * -1) return 0;
+  return reversed * Math.sign(x);
 };`;
 
 const Code = () => {

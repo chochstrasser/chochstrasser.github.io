@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import TwoSumCode from "./twoSumCode";
-import TwoSumRef from "./twoSumRef";
 import { useHistory } from "react-router-dom";
-import TwoSumDetail from "./twoSumDetail";
+import Code from "./code";
+import Reference from "./reference";
+import Detail from "./detail";
 import ROUTES from "../../const/routes";
 
 const Wrapper = styled.div`
@@ -28,9 +28,9 @@ const TwoSum = ({ showModal }) => {
         <h1 className="código-xxxlarge">
           <b>Two sum</b>
         </h1>
-        <TwoSumDetail />
-        <TwoSumRef />
-        <TwoSumCode />
+        <Detail />
+        <Reference />
+        <Code />
       </div>
       <footer className="código-padding-64 código-white">
         <div className="código-bar">
