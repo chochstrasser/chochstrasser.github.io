@@ -53,7 +53,7 @@ const IMPLEMENTATION = [
 const Code = () => {
   return (
     <>
-      <h3>Implementation 2</h3>
+      <h3>Implementation 1</h3>
       <div className="código-row">
         <SyntaxHighlighter
           language="javascript"
