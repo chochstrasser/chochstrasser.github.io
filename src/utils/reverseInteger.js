@@ -1,4 +1,4 @@
-export const reverseNumber = (x) => {
+export const reverse = (x) => {
   let temp = Math.abs(x);
   let reversed = 0;
   while (temp !== 0) {
@@ -9,3 +9,5 @@ export const reverseNumber = (x) => {
   if (reversed > 2 ** 31 || reversed < 2 ** 31 * -1) return 0;
   return reversed * Math.sign(x);
 };
+
+export default reverse;

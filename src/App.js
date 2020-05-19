@@ -41,7 +41,7 @@ import AddTwoNumbers from "./problems/addTwoNumbers";
 import LongestSubStringWithoutRepeatingCharacters from "./problems/longestSubStringWithoutRepeatingCharacters";
 import MedianOfTwoSortedArrays from "./problems/medianOfTwoSortedArrays";
 import ZigZag from "./problems/zigZag";
-import ReverseInteger from "./problems/reverseNumber";
+import ReverseInteger from "./problems/reverseInteger";
 import PalindromeNumber from "./problems/palindromeNumber";
 import RomanToInteger from "./problems/romanToInteger";
 import LongestCommonPrefix from "./problems/longestCommonPrefix";

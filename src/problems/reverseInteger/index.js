@@ -5,6 +5,7 @@ import Code from "./code";
 import Reference from "./reference";
 import Detail from "./detail";
 import ROUTES from "../../const/routes";
+import FlowChart from "../../images/flowchart-to-find-reverse-of-a-number.jpg";
 
 const Wrapper = styled.div`
   max-width: 1400px;
@@ -29,6 +30,7 @@ const Flatten = ({ showModal }) => {
           <b>Reverse integer</b>
         </h1>
         <Detail />
+        <img src={FlowChart} alt="flow chart to find reverse of a number" />
         <Reference />
         <Code />
       </div>

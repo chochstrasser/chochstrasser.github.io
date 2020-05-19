@@ -2,7 +2,7 @@ import React from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
-const IMPLEMENTATION = `const reverseNumber = (x) => {
+const IMPLEMENTATION = `const reverse = (x) => {
   let temp = Math.abs(x);
   let reversed = 0;
   while (temp !== 0) {
