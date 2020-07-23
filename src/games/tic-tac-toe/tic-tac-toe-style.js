@@ -51,6 +51,11 @@ const StyledSquare = styled.button`
   }
 `;
 
+const ListItem = styled.li`
+  font-weight: ${(props) => (props.active ? "900" : "100")};
+  cursor: pointer;
+`;
+
 export {
   GameWrapper,
   Status,
@@ -59,4 +64,5 @@ export {
   Game,
   GameBoard,
   GameInfo,
+  ListItem,
 };

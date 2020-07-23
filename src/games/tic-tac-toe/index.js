@@ -30,7 +30,6 @@ const TicTacToe = () => {
       return;
     }
     squares[i] = state.xIsNext ? "X" : "O";
-    console.log("x is next ", squares[i]);
     setState((prevState) => ({
       ...prevState,
       xIsNext: !prevState.xIsNext,
@@ -56,7 +55,7 @@ const TicTacToe = () => {
         <GameInfo>
           <div>{status}</div>
           <ol>
-            <Moves history={state.history} jumpTo={jumpTo} />
+            <Moves {...state} jumpTo={jumpTo} />
           </ol>
         </GameInfo>
       </Game>

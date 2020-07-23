@@ -1,4 +1,5 @@
 import React from "react";
+import { ListItem } from "./tic-tac-toe-style";
 
 const POSITIONS = {
   "0": "(0,0)",
@@ -12,15 +13,21 @@ const POSITIONS = {
   "8": "(2,2)",
 };
 
-const Moves = ({ history, jumpTo }) =>
+const Moves = ({ history, jumpTo, stepNumber }) =>
   history.map((step, move) => {
     const desc = move
-      ? `Go to move # ${move} ${POSITIONS[step.position]}`
+      ? `Go to move #${move} ${POSITIONS[step.position]}`
       : "Go to game start";
+
+    console.log("step number", stepNumber, move);
     return (
-      <li key={move}>
-        <button onClick={() => jumpTo(move)}>{desc}</button>
-      </li>
+      <ListItem
+        key={move}
+        onClick={() => jumpTo(move)}
+        active={stepNumber - move === 0}
+      >
+        {desc}
+      </ListItem>
     );
   });
 
