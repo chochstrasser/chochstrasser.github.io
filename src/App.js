@@ -52,6 +52,7 @@ import FloodFill from "./problems/floodFill";
 
 // Games
 import TicTacToe from "./games/tic-tac-toe";
+import { ContentWrapper } from "./app-styles";
 
 library.add(
   fab,
@@ -77,6 +78,7 @@ const App = () => {
   const [showModal, setShowModal] = useState(false);
 
   const handleClick = (display) => () => {
+    console.log(MODAL_ID);
     document.getElementById(MODAL_ID).style.display = display;
     setShowModal(display === "block");
   };
@@ -84,8 +86,15 @@ const App = () => {
   const props = { showModal };
 
   return (
-    <div className={themeLight ? "código-light-grey" : "código-dark-grey"}>
+    <ContentWrapper
+      className={themeLight ? "código-light-grey" : "código-dark-grey"}
+    >
       <Router>
+        <Nav
+          handleClick={handleClick}
+          elementId={MODAL_ID}
+          setShowModal={setShowModal}
+        />
         <Switch>
           <Route
             exact
@@ -157,13 +166,8 @@ const App = () => {
           />
           <Route component={FourZeroFour} />
         </Switch>
-        <Nav
-          handleClick={handleClick}
-          elementId={MODAL_ID}
-          setShowModal={setShowModal}
-        />
       </Router>
-    </div>
+    </ContentWrapper>
   );
 };
 

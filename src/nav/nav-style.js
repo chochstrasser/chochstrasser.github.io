@@ -10,4 +10,8 @@ const FixedButtonBelow = styled(FixedButton)`
   top: 5.7rem;
 `;
 
-export { FixedButton, FixedButtonBelow };
+const NavBlur = styled.nav`
+  backdrop-filter: blur(4px);
+`;
+
+export { NavBlur, FixedButton, FixedButtonBelow };
