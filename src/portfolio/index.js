@@ -14,11 +14,7 @@ const Portfolio = ({ showModal }) => {
 
   return (
     <>
-      <div
-        role="main"
-        className="código-content código-margin-top"
-        style={maxWidthContent}
-      >
+      <div role="main" className="código-content" style={maxWidthContent}>
         <div className="código-row-padding">
           <PortfolioLeftColumn />
           <PortfolioRightColumn />

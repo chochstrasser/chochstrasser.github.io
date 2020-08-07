@@ -1165,6 +1165,9 @@ a {
 .código-padding {
   padding: 8px 16px !important;
 }
+.código-padding-top {
+  padding-top: 3rem !important;
+}
 .código-padding-large {
   padding: 12px 24px !important;
 }
