@@ -54,6 +54,7 @@ const FlexNavBar = styled.div`
 
 const NavBodyContent = styled.div`
   margin-top: 2.5rem;
+  padding: 0 0 2.5rem 0;
 `;
 
 export {

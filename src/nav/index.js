@@ -55,10 +55,7 @@ const Nav = ({ handleClick, elementId, showModal, setShowModal }) => {
       >
         {`${themeLight ? "light" : "dark"}`}
       </FixedButtonBelow> */}
-      <NavBodyContent
-        id={elementId}
-        className="código-modal código-padding-none"
-      >
+      <NavBodyContent id={elementId} className="código-modal">
         <div className="código-animate-top código-card-4 código-white">
           <div>
             <NavLink
