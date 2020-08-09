@@ -93,6 +93,7 @@ const App = () => {
         <Nav
           handleClick={handleClick}
           elementId={MODAL_ID}
+          showModal={showModal}
           setShowModal={setShowModal}
         />
         <Switch>
