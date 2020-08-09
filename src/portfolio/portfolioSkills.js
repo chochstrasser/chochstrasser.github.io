@@ -40,7 +40,7 @@ const PortfolioSkills = () => (
     <div className="código-light-grey código-round-xlarge código-small">
       <div
         className="código-container código-center código-round-xlarge código-teal"
-        style={progressBar80}
+        style={progressBar90}
       >
         90%
       </div>
@@ -49,7 +49,7 @@ const PortfolioSkills = () => (
     <div className="código-light-grey código-round-xlarge código-small">
       <div
         className="código-container código-center código-round-xlarge código-teal"
-        style={progressBar90}
+        style={progressBar80}
       >
         <div className="código-center código-text-white">80%</div>
       </div>

@@ -2,10 +2,19 @@ import React, { useContext } from "react";
 import { useHistory, useLocation } from "react-router-dom";
 import ROUTES from "../const/routes";
 import NavLink from "./nav-link";
-import { NavBlur, FixedButton, FixedButtonBelow } from "./nav-style";
+import {
+  NavBlur,
+  LineWrapper,
+  Line,
+  Brand,
+  FlexNavBar,
+  NavBodyContent,
+  FixedButton,
+  FixedButtonBelow,
+} from "./nav-style";
 import { themeContext } from "../context/theme-context";
 
-const Nav = ({ handleClick, elementId, setShowModal }) => {
+const Nav = ({ handleClick, elementId, showModal, setShowModal }) => {
   const { themeLight, onChangeTheme } = useContext(themeContext);
   const history = useHistory();
   const location = useLocation();
@@ -21,12 +30,18 @@ const Nav = ({ handleClick, elementId, setShowModal }) => {
     <>
       <NavBlur className="código-top">
         <div className="código-bar código-black código-opacity-min">
-          <button
-            onClick={handleClick("block")}
-            className="código-bar-item código-button código-hover-black"
-          >
-            ☰
-          </button>
+          <FlexNavBar>
+            <button
+              onClick={handleClick(showModal ? "none" : "block")}
+              className="código-bar-item código-button código-hover-black"
+            >
+              <LineWrapper>
+                <Line showModal={showModal} />
+                <Line showModal={showModal} />
+              </LineWrapper>
+            </button>
+            <Brand>CH</Brand>
+          </FlexNavBar>
         </div>
       </NavBlur>
       {/* 
@@ -40,20 +55,11 @@ const Nav = ({ handleClick, elementId, setShowModal }) => {
       >
         {`${themeLight ? "light" : "dark"}`}
       </FixedButtonBelow> */}
-      <div
+      <NavBodyContent
         id={elementId}
-        className="código-modal código-margin-none código-padding-none"
+        className="código-modal código-padding-none"
       >
-        <div className="código-animate-right código-card-4 código-white">
-          <header className="código-container código-teal">
-            <span
-              onClick={handleClick("none")}
-              className="código-button código-hover-teal código-display-top-right código-xlarge"
-            >
-              &times;
-            </span>
-            <h3>Where do you want to go?</h3>
-          </header>
+        <div className="código-animate-top código-card-4 código-white">
           <div>
             <NavLink
               onClick={handleNavItemClick(ROUTES.default)}
@@ -158,7 +164,7 @@ const Nav = ({ handleClick, elementId, setShowModal }) => {
             />
           </div>
         </div>
-      </div>
+      </NavBodyContent>
     </>
   );
 };
