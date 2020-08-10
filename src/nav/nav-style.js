@@ -24,16 +24,17 @@ const Line = styled.span`
   width: 1.15rem;
   border-bottom: 1px solid white;
   margin: 0.5rem 0;
-  transform-origin: left top;
-  transition: all 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  transform-origin: center;
+  transition: transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
 
   :nth-child(1) {
     transform: ${(props) =>
-      props.showModal && `translate(0,-0.25rem) rotate(45deg)`};
+      props.showModal && `translateY(0.25rem) rotate(45deg)`};
   }
 
   :nth-child(2) {
-    transform: ${(props) => props.showModal && `rotate(-45deg)`};
+    transform: ${(props) =>
+      props.showModal && `translateY(-0.25rem) rotate(-45deg)`};
   }
 `;
 
