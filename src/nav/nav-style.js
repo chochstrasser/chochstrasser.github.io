@@ -26,16 +26,16 @@ const Line = styled.span`
   border-bottom: 1px solid white;
   margin: 0.5rem 0;
   transform-origin: center;
-  transition: transform 0.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  transition: all 1.1806s cubic-bezier(0.04, 0.04, 0.12, 0.96);
 
   :nth-child(1) {
     transform: ${(props) =>
-      props.showModal && `translateY(0.25rem) rotate(45deg)`};
+      props.showModal && `translateY(0.25rem) rotate(315deg)`};
   }
 
   :nth-child(2) {
     transform: ${(props) =>
-      props.showModal && `translateY(-0.25rem) rotate(-45deg)`};
+      props.showModal && ` translateY(-0.25rem) rotate(-135deg)`};
   }
 `;
 
@@ -55,8 +55,8 @@ const FlexNavBar = styled.div`
 `;
 
 const NavBodyContent = styled.div`
-  margin-top: 2.5rem;
-  padding: 0 0 2.5rem 0;
+  margin-top: 2.7rem;
+  padding: 0 0 2.7rem 0;
 `;
 
 export {
