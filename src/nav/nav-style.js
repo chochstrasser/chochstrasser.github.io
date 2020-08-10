@@ -15,8 +15,9 @@ const NavBlur = styled.nav`
 `;
 
 const LineWrapper = styled.label`
-  width: 1rem;
-  height: 1rem;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 `;
 
 const Line = styled.span`
