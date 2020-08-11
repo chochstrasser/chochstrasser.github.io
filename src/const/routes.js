@@ -21,6 +21,9 @@ const ROUTES = {
   games: {
     "tic-tac-toe": "/games/tic-tac-toe",
   },
+  apps: {
+    recipes: "/apps/recipes",
+  },
 };
 
 export default ROUTES;
