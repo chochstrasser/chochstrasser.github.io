@@ -2,25 +2,27 @@ import React from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
-const IMPLEMENTATION = `const floodFillAlgorithm = (list, x, y) => {
-  let count = 0;
-  let visited = {};
-  const floodFill = (list, x, y) => {
-    if (!list[x] || !list[x][y]) return;
-    if (
-      list[x][y] === 0 ||
-      (typeof visited[x + "," + y] !== "undefined" && visited[x + "," + y])
-    )
-      return;
-    count++;
-    visited[x + "," + y] = true;
-    floodFill(list, x, y - 1);
-    floodFill(list, x, y + 1);
-    floodFill(list, x - 1, y);
-    floodFill(list, x + 1, y);
-    return count;
+const IMPLEMENTATION = `const romanToInt = (s) => {
+  const convert = {
+    I: 1,
+    V: 5,
+    X: 10,
+    L: 50,
+    C: 100,
+    D: 500,
+    M: 1000,
   };
-  const result = floodFill(list, x, y);
+  let result = 0;
+  let previousNumber = 0;
+  for (let i = s.length - 1; i >= 0; i--) {
+    const currentNumber = convert[s[i]];
+    if (currentNumber < previousNumber) {
+      result -= currentNumber;
+    } else {
+      result += currentNumber;
+      previousNumber = currentNumber;
+    }
+  }
   return result;
 };`;
 

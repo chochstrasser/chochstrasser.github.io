@@ -8,36 +8,60 @@ const Detail = () => {
       <div className="content__u3I1 question-content__JfgR">
         <div>
           <p>
-            You are given an array either 1D or 2D. You are to determine the
-            area connected to a given node.
+            Given a string containing just the characters '(', ')', '{", "}',
+            '[' and ']', determine if the input string is valid.
           </p>
-
-          <strong>Example 1:</strong>
-
-          <SyntaxHighlighter
-            language="javascript"
-            style={atomOneDark}
-            wrapLines={true}
-          >
-            {`Input: 2D array: [[0, 0, 0, 0, 1, 1, 0, 0, 0, 0]], x: 0, y: 4
-Output: 2`}
-          </SyntaxHighlighter>
+          <p>An input string is valid if:</p>
+          <ol>
+            <li>Open brackets must be closed by the same type of brackets.</li>
+            <li>Open brackets must be closed in the correct order.</li>
+          </ol>
+          <p>Note that an empty string is also considered valid.</p>
         </div>
-
-        <strong>Example 2:</strong>
-
+        <strong>Example 1:</strong>
         <SyntaxHighlighter
           language="javascript"
           style={atomOneDark}
           wrapLines={true}
         >
-          {`Input: 2D array:  [
-  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 1, 1, 0, 0, 0, 0],
-  [0, 0, 0, 0, 1, 1, 1, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-], x: 2, y: 6
-Output: 5`}
+          {`Input: "()"
+Output: true`}
+        </SyntaxHighlighter>
+        <strong>Example 2:</strong>
+        <SyntaxHighlighter
+          language="javascript"
+          style={atomOneDark}
+          wrapLines={true}
+        >
+          {`Input: "()[]{}"
+Output: true`}
+        </SyntaxHighlighter>
+        <strong>Example 3:</strong>
+        <SyntaxHighlighter
+          language="javascript"
+          style={atomOneDark}
+          wrapLines={true}
+        >
+          {`Input: "(]"
+Output: false`}
+        </SyntaxHighlighter>
+        <strong>Example 4:</strong>
+        <SyntaxHighlighter
+          language="javascript"
+          style={atomOneDark}
+          wrapLines={true}
+        >
+          {`Input: "([)]"
+Output: false`}
+        </SyntaxHighlighter>
+        <strong>Example 5:</strong>
+        <SyntaxHighlighter
+          language="javascript"
+          style={atomOneDark}
+          wrapLines={true}
+        >
+          {`Input: "{[]}"
+Output: true`}
         </SyntaxHighlighter>
       </div>
     </>

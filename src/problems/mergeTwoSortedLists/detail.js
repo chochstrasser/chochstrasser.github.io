@@ -8,36 +8,19 @@ const Detail = () => {
       <div className="content__u3I1 question-content__JfgR">
         <div>
           <p>
-            You are given an array either 1D or 2D. You are to determine the
-            area connected to a given node.
+            Merge two sorted linked lists and return it as a new{" "}
+            <strong>sorted</strong> list. The new list should be made by
+            splicing together the nodes of the first two lists.
           </p>
-
-          <strong>Example 1:</strong>
-
-          <SyntaxHighlighter
-            language="javascript"
-            style={atomOneDark}
-            wrapLines={true}
-          >
-            {`Input: 2D array: [[0, 0, 0, 0, 1, 1, 0, 0, 0, 0]], x: 0, y: 4
-Output: 2`}
-          </SyntaxHighlighter>
         </div>
-
-        <strong>Example 2:</strong>
-
+        <strong>Example 1:</strong>
         <SyntaxHighlighter
           language="javascript"
           style={atomOneDark}
           wrapLines={true}
         >
-          {`Input: 2D array:  [
-  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 0, 0, 0, 1, 1, 0, 0, 0, 0],
-  [0, 0, 0, 0, 1, 1, 1, 0, 0, 0],
-  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-], x: 2, y: 6
-Output: 5`}
+          {`Input: 1->2->4, 1->3->4
+Output: 1->1->2->3->4->4`}
         </SyntaxHighlighter>
       </div>
     </>

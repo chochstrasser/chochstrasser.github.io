@@ -1,15 +1,11 @@
 import React from "react";
-import styled from "styled-components";
 import { useHistory } from "react-router-dom";
 import Code from "./code";
 import Reference from "./reference";
 import Detail from "./detail";
 import ROUTES from "../../const/routes";
 import FlowChart from "../../images/flowchart-to-find-reverse-of-a-number.jpg";
-
-const Wrapper = styled.div`
-  max-width: 1400px;
-`;
+import { Wrapper, Image } from "./reverseInteger-styles";
 
 const Flatten = ({ showModal }) => {
   const history = useHistory();
@@ -30,7 +26,7 @@ const Flatten = ({ showModal }) => {
           <b>Reverse integer</b>
         </h1>
         <Detail />
-        <img src={FlowChart} alt="flow chart to find reverse of a number" />
+        <Image src={FlowChart} alt="flow chart to find reverse of a number" />
         <Reference />
         <Code />
       </div>
