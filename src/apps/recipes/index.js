@@ -1,14 +1,27 @@
 import React from "react";
 
 const getRecipes = async (ingredients, searchWord, page) => {
-  const url = `http://www.recipepuppy.com/api/?i=${ingredients}&q=${searchWord}&p=${page}`;
-  const response = await fetch(url);
+  // const url = `http://www.recipepuppy.com/api/?i=${ingredients}&q=${searchWord}&p=${page}`;
+  // const response = await fetch(url);
+  // console.log("response", response);
+
+  const response = await fetch(
+    "https://tasty.p.rapidapi.com/recipes/list?tags=under_30_minutes&from=0&sizes=20",
+    {
+      method: "GET",
+      headers: {
+        "x-rapidapi-host": "tasty.p.rapidapi.com",
+        "x-rapidapi-key": "e5e0cef0c0msh4fa5d0686550972p1a1b84jsnf514703be724",
+      },
+    }
+  );
   console.log("response", response);
-  // .then((response) => response.json()) // one extra step
-  // .then((data) => {
-  //   console.log(data);
+  // .then((response) => {
+  //   console.log(response);
   // })
-  // .catch((error) => console.error(error));
+  // .catch((err) => {
+  //   console.log(err);
+  // });
 };
 
 const Recipes = () => {
