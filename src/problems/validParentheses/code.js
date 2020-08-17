@@ -2,26 +2,26 @@ import React from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
-const IMPLEMENTATION = `const floodFillAlgorithm = (list, x, y) => {
-  let count = 0;
-  let visited = {};
-  const floodFill = (list, x, y) => {
-    if (!list[x] || !list[x][y]) return;
-    if (
-      list[x][y] === 0 ||
-      (typeof visited[x + "," + y] !== "undefined" && visited[x + "," + y])
-    )
-      return;
-    count++;
-    visited[x + "," + y] = true;
-    floodFill(list, x, y - 1);
-    floodFill(list, x, y + 1);
-    floodFill(list, x - 1, y);
-    floodFill(list, x + 1, y);
-    return count;
-  };
-  const result = floodFill(list, x, y);
-  return result;
+const IMPLEMENTATION = `const isValid = (s) => {
+  if (s.length === 0) return true;
+  let stack = [];
+  for (let i = 0; i < s.length; i++) {
+    const c = s[i];
+    switch (c) {
+      case "(":
+        stack.push(")");
+        break;
+      case "[":
+        stack.push("]");
+        break;
+      case "{":
+        stack.push("}");
+        break;
+      default:
+        if (stack.pop() !== c) return false;
+    }
+  }
+  return stack.length === 0;
 };`;
 
 const Code = () => {

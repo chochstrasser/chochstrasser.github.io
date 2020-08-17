@@ -1,14 +1,10 @@
 import React from "react";
-import styled from "styled-components";
 import { useHistory } from "react-router-dom";
 import Code from "./code";
 import Reference from "./reference";
 import Detail from "./detail";
 import ROUTES from "../../const/routes";
-
-const Wrapper = styled.div`
-  max-width: 1400px;
-`;
+import { Wrapper } from "./validParentheses-styles";
 
 const Flatten = ({ showModal }) => {
   const history = useHistory();

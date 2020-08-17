@@ -102,6 +102,12 @@ const NavLinks = ({ onClick }) => {
           isActive={pathname === ROUTES.games["tic-tac-toe"]}
           text="Tic-Tac-Toe"
         />
+        <h4 className="código-center">Apps</h4>
+        <NavLink
+          onClick={onClick(ROUTES.apps["recipes"])}
+          isActive={pathname === ROUTES.apps["recipes"]}
+          text="Recipes"
+        />
       </div>
     </div>
   );
