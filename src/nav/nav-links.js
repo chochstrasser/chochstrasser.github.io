@@ -108,6 +108,11 @@ const NavLinks = ({ onClick }) => {
           isActive={pathname === ROUTES.apps["recipes"]}
           text="Recipes"
         />
+        <NavLink
+          onClick={onClick(ROUTES.apps["stock-pile"])}
+          isActive={pathname === ROUTES.apps["stock-pile"]}
+          text="Stock pile"
+        />
       </div>
     </div>
   );
