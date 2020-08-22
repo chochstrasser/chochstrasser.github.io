@@ -12,13 +12,11 @@ const App = () => {
   const [showModal, setShowModal] = useState(false);
 
   const handleClick = (display) => () => {
-    console.log(MODAL_ID);
     document.getElementById(MODAL_ID).style.display = display;
     setShowModal(display === "block");
   };
 
   const props = { showModal };
-  console.log("test");
 
   return (
     <ContentWrapper

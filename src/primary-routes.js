@@ -29,9 +29,9 @@ import TicTacToe from "./games/tic-tac-toe";
 
 // Apps
 import Recipes from "./apps/recipes";
+import StockPile from "./apps/stock-pile";
 
 const PrimaryRoutes = (props) => {
-  console.log(props);
   return (
     <Switch>
       <Route
@@ -103,6 +103,10 @@ const PrimaryRoutes = (props) => {
       <Route
         path={ROUTES.apps["recipes"]}
         render={() => <Recipes {...props} />}
+      />
+      <Route
+        path={ROUTES.apps["stock-pile"]}
+        render={() => <StockPile {...props} />}
       />
       <Route component={FourZeroFour} />
     </Switch>
