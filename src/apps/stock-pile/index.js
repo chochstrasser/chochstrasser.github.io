@@ -9,7 +9,8 @@ const FETCH_HEADERS = {
 };
 
 const URLS = {
-  STOCKS: "https://xxcfgsjs9b.execute-api.us-west-2.amazonaws.com/v1/stocks",
+  STOCKS:
+    "https://xxcfgsjs9b.execute-api.us-west-2.amazonaws.com/v1/helloworld",
 };
 
 const getStocks = async () => {
