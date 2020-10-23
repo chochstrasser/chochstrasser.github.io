@@ -1,9 +1,9 @@
-import styled from "styled-components";
-import Code from "./code";
-import Reference from "./reference";
-import { useHistory } from "react-router-dom";
-import Detail from "./detail";
-import ROUTES from "../../const/routes";
+import styled from 'styled-components';
+import Code from './code';
+import Reference from './reference';
+import { useHistory } from 'react-router-dom';
+import Detail from './detail';
+import ROUTES from '../../const/routes';
 
 const Wrapper = styled.div`
   max-width: 1400px;
@@ -33,17 +33,12 @@ const TwoSum = ({ showModal }) => {
       </div>
       <footer className="código-padding-64 código-white">
         <div className="código-bar">
-          <button
-            className="código-button código-left código-teal código-hover-teal"
-            onClick={handleClick(ROUTES.problems.twoSum)}
-          >
+          <button className="código-button código-left código-teal código-hover-teal" onClick={handleClick(ROUTES.problems.twoSum)}>
             ❮ Previous
           </button>
           <button
             className="código-button código-right código-teal código-hover-teal"
-            onClick={handleClick(
-              ROUTES.problems.longestSubstringWithoutRepeatingCharacters
-            )}
+            onClick={handleClick(ROUTES.problems.longestSubstringWithoutRepeatingCharacters)}
           >
             Next ❯
           </button>

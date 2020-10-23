@@ -1,5 +1,5 @@
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 const IMPLEMENTATION_ONE = `const ZigZagConversion = (s, numRows) => {
   if (numRows === 1) return s;
@@ -39,22 +39,14 @@ const ZigZagCode = () => {
     <>
       <h3>Implementation one</h3>
       <div className="código-row">
-        <SyntaxHighlighter
-          language="javascript"
-          style={atomOneDark}
-          wrapLines={true}
-        >
+        <SyntaxHighlighter language="javascript" style={atomOneDark} wrapLines={true}>
           {IMPLEMENTATION_ONE}
         </SyntaxHighlighter>
       </div>
 
       <h3>Implementation two</h3>
       <div className="código-row">
-        <SyntaxHighlighter
-          language="javascript"
-          style={atomOneDark}
-          wrapLines={true}
-        >
+        <SyntaxHighlighter language="javascript" style={atomOneDark} wrapLines={true}>
           {IMPLEMENTATION_TWO}
         </SyntaxHighlighter>
       </div>

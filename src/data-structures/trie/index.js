@@ -1,9 +1,9 @@
-import styled from "styled-components";
-import TrieCode from "./trieCode";
-import TrieRef from "./trieRef";
-import { useHistory } from "react-router-dom";
-import TrieDetail from "./trieDetail";
-import ROUTES from "../../const/routes";
+import styled from 'styled-components';
+import TrieCode from './trieCode';
+import TrieRef from './trieRef';
+import { useHistory } from 'react-router-dom';
+import TrieDetail from './trieDetail';
+import ROUTES from '../../const/routes';
 
 const Wrapper = styled.div`
   max-width: 1400px;
@@ -40,16 +40,10 @@ const Trie = ({ showModal }) => {
       </div>
       <footer className="código-padding-64 código-white">
         <div className="código-bar">
-          <button
-            className="código-button código-left código-teal código-hover-teal"
-            onClick={handleClick(ROUTES.linkedList)}
-          >
+          <button className="código-button código-left código-teal código-hover-teal" onClick={handleClick(ROUTES.linkedList)}>
             ❮ Previous
           </button>
-          <button
-            className="código-button código-right código-teal código-hover-teal"
-            onClick={handleClick(ROUTES.default)}
-          >
+          <button className="código-button código-right código-teal código-hover-teal" onClick={handleClick(ROUTES.default)}>
             Next ❯
           </button>
         </div>

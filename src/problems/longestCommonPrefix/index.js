@@ -1,9 +1,9 @@
-import styled from "styled-components";
-import Code from "./code";
-import Reference from "./reference";
-import { useHistory } from "react-router-dom";
-import Detail from "./detail";
-import ROUTES from "../../const/routes";
+import styled from 'styled-components';
+import Code from './code';
+import Reference from './reference';
+import { useHistory } from 'react-router-dom';
+import Detail from './detail';
+import ROUTES from '../../const/routes';
 
 const Wrapper = styled.div`
   max-width: 1400px;
@@ -35,13 +35,13 @@ const LongestCommonPrefix = ({ showModal }) => {
         <div className="código-bar">
           <button
             className="código-button código-left código-teal código-hover-teal"
-            onClick={handleClick(ROUTES.problems["roman-to-integer"])}
+            onClick={handleClick(ROUTES.problems['roman-to-integer'])}
           >
             ❮ Previous
           </button>
           <button
             className="código-button código-right código-teal código-hover-teal"
-            onClick={handleClick(ROUTES.problems["valid-parentheses"])}
+            onClick={handleClick(ROUTES.problems['valid-parentheses'])}
           >
             Next ❯
           </button>

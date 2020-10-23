@@ -1,5 +1,5 @@
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 const IMPLEMENTATION = `const reverse = (x) => {
   let temp = Math.abs(x);
@@ -18,11 +18,7 @@ const Code = () => {
     <>
       <h3>Implementation</h3>
       <div className="código-row">
-        <SyntaxHighlighter
-          language="javascript"
-          style={atomOneDark}
-          wrapLines={true}
-        >
+        <SyntaxHighlighter language="javascript" style={atomOneDark} wrapLines={true}>
           {IMPLEMENTATION}
         </SyntaxHighlighter>
       </div>

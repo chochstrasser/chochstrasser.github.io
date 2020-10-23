@@ -1,11 +1,11 @@
-import PortfolioContact from "./portfolioContact";
-import PortfolioLanguages from "./PortfolioLanguages";
-import PortfolioSkills from "./portfolioSkills";
-import PortfolioImage from "../images/portfolio.jpg";
-import "./portfolio.css";
+import PortfolioContact from './portfolioContact';
+import PortfolioLanguages from './PortfolioLanguages';
+import PortfolioSkills from './portfolioSkills';
+import PortfolioImage from '../images/portfolio.jpg';
+import './portfolio.css';
 
 const fullWidth = {
-  width: "100%",
+  width: '100%',
 };
 
 const PortfolioLeftColumn = () => (

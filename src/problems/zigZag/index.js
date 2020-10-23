@@ -1,9 +1,9 @@
-import styled from "styled-components";
-import ZigZagCode from "./zigZagCode";
-import ZigZagRef from "./zigZagRef";
-import { useHistory } from "react-router-dom";
-import ZigZagDetail from "./zigZagDetail";
-import ROUTES from "../../const/routes";
+import styled from 'styled-components';
+import ZigZagCode from './zigZagCode';
+import ZigZagRef from './zigZagRef';
+import { useHistory } from 'react-router-dom';
+import ZigZagDetail from './zigZagDetail';
+import ROUTES from '../../const/routes';
 
 const Wrapper = styled.div`
   max-width: 1400px;
@@ -35,15 +35,13 @@ const ZigZag = ({ showModal }) => {
         <div className="código-bar">
           <button
             className="código-button código-left código-teal código-hover-teal"
-            onClick={handleClick(
-              ROUTES.problems["median-of-two-sorted-arrays"]
-            )}
+            onClick={handleClick(ROUTES.problems['median-of-two-sorted-arrays'])}
           >
             ❮ Previous
           </button>
           <button
             className="código-button código-right código-teal código-hover-teal"
-            onClick={handleClick(ROUTES.problems["reverse-integer"])}
+            onClick={handleClick(ROUTES.problems['reverse-integer'])}
           >
             Next ❯
           </button>

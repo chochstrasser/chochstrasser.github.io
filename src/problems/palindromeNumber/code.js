@@ -1,5 +1,5 @@
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 const IMPLEMENTATIONS = [
   `const isPalindrome = (x) => {
@@ -30,21 +30,13 @@ const Code = () => {
     <>
       <h3>Implementation one</h3>
       <div className="código-row">
-        <SyntaxHighlighter
-          language="javascript"
-          style={atomOneDark}
-          wrapLines={true}
-        >
+        <SyntaxHighlighter language="javascript" style={atomOneDark} wrapLines={true}>
           {IMPLEMENTATIONS[0]}
         </SyntaxHighlighter>
       </div>
       <h3>Implementation two</h3>
       <div className="código-row">
-        <SyntaxHighlighter
-          language="javascript"
-          style={atomOneDark}
-          wrapLines={true}
-        >
+        <SyntaxHighlighter language="javascript" style={atomOneDark} wrapLines={true}>
           {IMPLEMENTATIONS[1]}
         </SyntaxHighlighter>
       </div>

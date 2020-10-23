@@ -1,8 +1,8 @@
-import { useState } from "react";
-import Board from "./board";
-import useCalculateWinner from "./useCalculateWinner";
-import { GameWrapper, Game, GameBoard, GameInfo } from "./tic-tac-toe-style";
-import Moves from "./moves";
+import { useState } from 'react';
+import Board from './board';
+import useCalculateWinner from './useCalculateWinner';
+import { GameWrapper, Game, GameBoard, GameInfo } from './tic-tac-toe-style';
+import Moves from './moves';
 
 const INITIAL_STATE = {
   history: [
@@ -29,7 +29,7 @@ const TicTacToe = () => {
     if (winner || squares[i]) {
       return;
     }
-    squares[i] = state.xIsNext ? "X" : "O";
+    squares[i] = state.xIsNext ? 'X' : 'O';
     setState((prevState) => ({
       ...prevState,
       xIsNext: !prevState.xIsNext,

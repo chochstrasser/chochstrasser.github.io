@@ -1,7 +1,7 @@
-import { useState } from "react";
-import Tabs from "./tabs";
-import SideBar from "./sideBar";
-import MainContent from "./content";
+import { useState } from 'react';
+import Tabs from './tabs';
+import SideBar from './sideBar';
+import MainContent from './content';
 
 const StockPile = () => {
   const [tab, setTab] = useState(null);

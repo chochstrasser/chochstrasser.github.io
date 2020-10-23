@@ -17,9 +17,7 @@ const useCalculateWinner = ({ squares, xIsNext }) => {
     }
   }
 
-  const status = winner
-    ? `Winner: ${winner}`
-    : `Next player: ${xIsNext ? "X" : "O"}`;
+  const status = winner ? `Winner: ${winner}` : `Next player: ${xIsNext ? 'X' : 'O'}`;
   return { status, winner };
 };
 

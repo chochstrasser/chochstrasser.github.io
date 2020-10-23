@@ -59,14 +59,12 @@ const Trie = () => {
 
   return {
     add: (word, item) => {
-      addNode(root, (word || "").toLocaleLowerCase(), item);
+      addNode(root, (word || '').toLocaleLowerCase(), item);
     },
     remove: (word, item) => {
-      removeNode(root, (word || "").toLocaleLowerCase(), item);
+      removeNode(root, (word || '').toLocaleLowerCase(), item);
     },
-    search: (text) => [
-      ...new Set(search(root, (text || "").toLocaleLowerCase())),
-    ],
+    search: (text) => [...new Set(search(root, (text || '').toLocaleLowerCase()))],
   };
 };
 

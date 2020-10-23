@@ -1,24 +1,15 @@
-import { useContext } from "react";
-import { useHistory } from "react-router-dom";
-import {
-  NavBlur,
-  LineWrapper,
-  Line,
-  Brand,
-  FlexNavBar,
-  NavBodyContent,
-  FixedButton,
-  FixedButtonBelow,
-} from "./nav-style";
-import { themeContext } from "../context/theme-context";
-import NavLinks from "./nav-links";
+import { useContext } from 'react';
+import { useHistory } from 'react-router-dom';
+import { NavBlur, LineWrapper, Line, Brand, FlexNavBar, NavBodyContent, FixedButton, FixedButtonBelow } from './nav-style';
+import { themeContext } from '../context/theme-context';
+import NavLinks from './nav-links';
 
 const Nav = ({ handleClick, elementId, showModal, setShowModal }) => {
   const { themeLight, onChangeTheme } = useContext(themeContext);
   const history = useHistory();
 
   const handleNavItemClick = (path) => () => {
-    document.getElementById(elementId).style.display = "none";
+    document.getElementById(elementId).style.display = 'none';
     history.push(path);
     setShowModal(false);
   };
@@ -28,10 +19,7 @@ const Nav = ({ handleClick, elementId, showModal, setShowModal }) => {
       <NavBlur className="código-top">
         <div className="código-bar código-black código-opacity-min">
           <FlexNavBar>
-            <button
-              onClick={handleClick(showModal ? "none" : "block")}
-              className="código-bar-item código-button código-hover-black"
-            >
+            <button onClick={handleClick(showModal ? 'none' : 'block')} className="código-bar-item código-button código-hover-black">
               <LineWrapper>
                 <Line showModal={showModal} />
                 <Line showModal={showModal} />

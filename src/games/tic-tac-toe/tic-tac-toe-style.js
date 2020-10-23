@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const GameWrapper = styled.div`
   margin: 20px;
@@ -27,7 +27,7 @@ const Status = styled.div`
 const BoardRow = styled.div`
   &:after {
     clear: both;
-    content: "";
+    content: '';
     display: table;
   }
 `;
@@ -52,17 +52,8 @@ const StyledSquare = styled.button`
 `;
 
 const ListItem = styled.li`
-  font-weight: ${(props) => (props.active ? "900" : "100")};
+  font-weight: ${(props) => (props.active ? '900' : '100')};
   cursor: pointer;
 `;
 
-export {
-  GameWrapper,
-  Status,
-  BoardRow,
-  StyledSquare,
-  Game,
-  GameBoard,
-  GameInfo,
-  ListItem,
-};
+export { GameWrapper, Status, BoardRow, StyledSquare, Game, GameBoard, GameInfo, ListItem };

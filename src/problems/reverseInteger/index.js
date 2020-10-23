@@ -1,10 +1,10 @@
-import { useHistory } from "react-router-dom";
-import Code from "./code";
-import Reference from "./reference";
-import Detail from "./detail";
-import ROUTES from "../../const/routes";
-import FlowChart from "../../images/flowchart-to-find-reverse-of-a-number.jpg";
-import { Wrapper, Image } from "./reverseInteger-styles";
+import { useHistory } from 'react-router-dom';
+import Code from './code';
+import Reference from './reference';
+import Detail from './detail';
+import ROUTES from '../../const/routes';
+import FlowChart from '../../images/flowchart-to-find-reverse-of-a-number.jpg';
+import { Wrapper, Image } from './reverseInteger-styles';
 
 const Flatten = ({ showModal }) => {
   const history = useHistory();
@@ -31,15 +31,12 @@ const Flatten = ({ showModal }) => {
       </div>
       <footer className="código-padding-64 código-white">
         <div className="código-bar">
-          <button
-            className="código-button código-left código-teal código-hover-teal"
-            onClick={handleClick(ROUTES.problems.zigzag)}
-          >
+          <button className="código-button código-left código-teal código-hover-teal" onClick={handleClick(ROUTES.problems.zigzag)}>
             ❮ Previous
           </button>
           <button
             className="código-button código-right código-teal código-hover-teal"
-            onClick={handleClick(ROUTES.problems["palindrome-number"])}
+            onClick={handleClick(ROUTES.problems['palindrome-number'])}
           >
             Next ❯
           </button>

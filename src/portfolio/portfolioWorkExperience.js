@@ -1,13 +1,10 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const PortfolioWorkExperience = () => {
   return (
     <div className="código-container código-card código-white código-margin-bottom">
       <h2 className="código-text-grey código-padding-16">
-        <FontAwesomeIcon
-          className="código-margin-right código-xxlarge código-text-teal"
-          icon="suitcase"
-        />
+        <FontAwesomeIcon className="código-margin-right código-xxlarge código-text-teal" icon="suitcase" />
         Work Experience
       </h2>
       <div className="código-container">
@@ -15,12 +12,8 @@ const PortfolioWorkExperience = () => {
           <b>Front End Developer / SoFi</b>
         </h5>
         <h6 className="código-text-teal">
-          <FontAwesomeIcon
-            className="código-margin-right código-text-teal"
-            icon="calendar-alt"
-          />
-          Apr 2019 -{" "}
-          <span className="código-tag código-teal código-round">Current</span>
+          <FontAwesomeIcon className="código-margin-right código-text-teal" icon="calendar-alt" />
+          Apr 2019 - <span className="código-tag código-teal código-round">Current</span>
         </h6>
         <hr />
       </div>
@@ -29,10 +22,7 @@ const PortfolioWorkExperience = () => {
           <b>Software Engineer / SkyWest</b>
         </h5>
         <h6 className="código-text-teal">
-          <FontAwesomeIcon
-            className="código-margin-right código-text-teal"
-            icon="calendar-alt"
-          />
+          <FontAwesomeIcon className="código-margin-right código-text-teal" icon="calendar-alt" />
           Apr 2016 - Mar 2019
         </h6>
         <hr />
@@ -42,10 +32,7 @@ const PortfolioWorkExperience = () => {
           <b>Web Developer / dōTERRA</b>
         </h5>
         <h6 className="código-text-teal">
-          <FontAwesomeIcon
-            className="código-margin-right código-text-teal"
-            icon="calendar-alt"
-          />
+          <FontAwesomeIcon className="código-margin-right código-text-teal" icon="calendar-alt" />
           Jan 2014 - Apr 2016
         </h6>
         <br />
@@ -55,10 +42,7 @@ const PortfolioWorkExperience = () => {
           <b>Student Software Engineer / Rocky Mountain Power</b>
         </h5>
         <h6 className="código-text-teal">
-          <FontAwesomeIcon
-            className="código-margin-right código-text-teal"
-            icon="calendar-alt"
-          />
+          <FontAwesomeIcon className="código-margin-right código-text-teal" icon="calendar-alt" />
           May 2009 - Jan 2014
         </h6>
         <br />

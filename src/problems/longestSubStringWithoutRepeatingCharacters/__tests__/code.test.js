@@ -1,18 +1,18 @@
-import lengthOfLongestSubstring from "../../../utils/longestSubstringWithoutRepeatingCharacters";
+import lengthOfLongestSubstring from '../../../utils/longestSubstringWithoutRepeatingCharacters';
 
-describe("Longest substring without repeating characters", () => {
-  it("should return 3", () => {
-    const result = lengthOfLongestSubstring("abcabcbb");
+describe('Longest substring without repeating characters', () => {
+  it('should return 3', () => {
+    const result = lengthOfLongestSubstring('abcabcbb');
     expect(result).toBe(3);
   });
 
-  it("should return 1", () => {
-    const result = lengthOfLongestSubstring("bbbbb");
+  it('should return 1', () => {
+    const result = lengthOfLongestSubstring('bbbbb');
     expect(result).toBe(1);
   });
 
-  it("should return 3", () => {
-    const result = lengthOfLongestSubstring("pwwkew");
+  it('should return 3', () => {
+    const result = lengthOfLongestSubstring('pwwkew');
     expect(result).toBe(3);
   });
 });

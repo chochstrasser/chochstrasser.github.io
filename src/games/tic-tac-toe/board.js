@@ -1,5 +1,5 @@
-import Square from "./square";
-import { BoardRow } from "./tic-tac-toe-style";
+import Square from './square';
+import { BoardRow } from './tic-tac-toe-style';
 
 const Board = ({ squares, onClick }) => {
   const renderSquare = (i) => {

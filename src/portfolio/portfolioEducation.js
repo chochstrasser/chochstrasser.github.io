@@ -1,13 +1,10 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const PortfolioEducation = () => {
   return (
     <div className="código-container código-card código-white código-margin-bottom">
       <h2 className="código-text-grey código-padding-16">
-        <FontAwesomeIcon
-          className="código-margin-right código-xxlarge código-text-teal"
-          icon="certificate"
-        />
+        <FontAwesomeIcon className="código-margin-right código-xxlarge código-text-teal" icon="certificate" />
         Education
       </h2>
       <div className="código-container">

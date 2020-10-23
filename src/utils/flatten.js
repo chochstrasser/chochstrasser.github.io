@@ -18,5 +18,4 @@ export const FlattenRecursion = (array) => {
   return reducedArray;
 };
 
-export const FlattenShortest = (a) =>
-  Array.isArray(a) ? [].concat(...a.map(FlattenShortest)) : a;
+export const FlattenShortest = (a) => (Array.isArray(a) ? [].concat(...a.map(FlattenShortest)) : a);

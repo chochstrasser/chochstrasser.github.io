@@ -1,9 +1,9 @@
-import PortfolioLeftColumn from "./portfolioLeftColumn";
-import PortfolioRightColumn from "./portfolioRightColumn";
-import Footer from "../footer";
+import PortfolioLeftColumn from './portfolioLeftColumn';
+import PortfolioRightColumn from './portfolioRightColumn';
+import Footer from '../footer';
 
 const maxWidthContent = {
-  maxWidth: "1400px",
+  maxWidth: '1400px',
 };
 
 const Portfolio = ({ showModal }) => {

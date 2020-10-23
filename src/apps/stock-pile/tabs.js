@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const Table = styled.div`
   display: table;
@@ -24,21 +24,15 @@ const Tabs = ({ setTab, currentTab }) => {
     <Table>
       <Row>
         <Column>
-          <Button onClick={() => setTab("push")}>
-            <div
-              className="tablink código-bottombar código-hover-light-grey código-padding"
-              active={currentTab === "push"}
-            >
+          <Button onClick={() => setTab('push')}>
+            <div className="tablink código-bottombar código-hover-light-grey código-padding" active={currentTab === 'push'}>
               Push
             </div>
           </Button>
         </Column>
         <Column>
-          <Button onClick={() => setTab("pull")}>
-            <div
-              className="tablink código-bottombar código-hover-light-grey código-padding"
-              active={currentTab === "pull"}
-            >
+          <Button onClick={() => setTab('pull')}>
+            <div className="tablink código-bottombar código-hover-light-grey código-padding" active={currentTab === 'pull'}>
               Pull
             </div>
           </Button>

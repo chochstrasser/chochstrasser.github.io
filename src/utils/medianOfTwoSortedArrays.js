@@ -17,19 +17,11 @@ export const findMedianSortedArraysBinarySearch = (nums1, nums2) => {
     const partitionX = (end + start) >> 1;
     const partitionY = ((nums1.length + nums2.length + 1) >> 1) - partitionX;
 
-    const maxLeftX =
-      partitionX === 0 ? Number.NEGATIVE_INFINITY : nums1[partitionX - 1];
-    const maxLeftY =
-      partitionY === 0 ? Number.NEGATIVE_INFINITY : nums2[partitionY - 1];
+    const maxLeftX = partitionX === 0 ? Number.NEGATIVE_INFINITY : nums1[partitionX - 1];
+    const maxLeftY = partitionY === 0 ? Number.NEGATIVE_INFINITY : nums2[partitionY - 1];
 
-    const minRightX =
-      partitionX === nums1.length
-        ? Number.POSITIVE_INFINITY
-        : nums1[partitionX];
-    const minRightY =
-      partitionY === nums2.length
-        ? Number.POSITIVE_INFINITY
-        : nums2[partitionY];
+    const minRightX = partitionX === nums1.length ? Number.POSITIVE_INFINITY : nums1[partitionX];
+    const minRightY = partitionY === nums2.length ? Number.POSITIVE_INFINITY : nums2[partitionY];
 
     if (maxLeftX <= minRightY && maxLeftY <= minRightX) {
       const lowMax = Math.max(maxLeftX, maxLeftY);

@@ -1,11 +1,5 @@
-import { library } from "@fortawesome/fontawesome-svg-core";
-import {
-  fab,
-  faSlack,
-  faGithub,
-  faTwitter,
-  faFacebookF,
-} from "@fortawesome/free-brands-svg-icons";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab, faSlack, faGithub, faTwitter, faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import {
   faUser,
   faBriefcase,
@@ -18,7 +12,7 @@ import {
   faCalendarAlt,
   faCertificate,
   faCogs,
-} from "@fortawesome/free-solid-svg-icons";
+} from '@fortawesome/free-solid-svg-icons';
 
 library.add(
   fab,

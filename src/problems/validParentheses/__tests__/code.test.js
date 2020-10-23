@@ -1,8 +1,8 @@
-import validParentheses from "../../../utils/validParentheses";
+import validParentheses from '../../../utils/validParentheses';
 
-describe("Valid parentheses", () => {
-  it("should return true", () => {
-    const result = validParentheses("{}[]()");
+describe('Valid parentheses', () => {
+  it('should return true', () => {
+    const result = validParentheses('{}[]()');
     expect(result).toBeTruthy();
   });
 });

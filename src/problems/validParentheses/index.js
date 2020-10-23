@@ -1,9 +1,9 @@
-import { useHistory } from "react-router-dom";
-import Code from "./code";
-import Reference from "./reference";
-import Detail from "./detail";
-import ROUTES from "../../const/routes";
-import { Wrapper } from "./validParentheses-styles";
+import { useHistory } from 'react-router-dom';
+import Code from './code';
+import Reference from './reference';
+import Detail from './detail';
+import ROUTES from '../../const/routes';
+import { Wrapper } from './validParentheses-styles';
 
 const Flatten = ({ showModal }) => {
   const history = useHistory();
@@ -31,13 +31,13 @@ const Flatten = ({ showModal }) => {
         <div className="código-bar">
           <button
             className="código-button código-left código-teal código-hover-teal"
-            onClick={handleClick(ROUTES.problems["longest-common-prefix"])}
+            onClick={handleClick(ROUTES.problems['longest-common-prefix'])}
           >
             ❮ Previous
           </button>
           <button
             className="código-button código-right código-teal código-hover-teal"
-            onClick={handleClick(ROUTES.problems["merge-two-sorted-lists"])}
+            onClick={handleClick(ROUTES.problems['merge-two-sorted-lists'])}
           >
             Next ❯
           </button>

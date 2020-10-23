@@ -1,5 +1,5 @@
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 const IMPLEMENTATION = [
   `const findMedianSortedArrays = (nums1, nums2) => {
@@ -54,21 +54,13 @@ const Code = () => {
     <>
       <h3>Implementation 1</h3>
       <div className="código-row">
-        <SyntaxHighlighter
-          language="javascript"
-          style={atomOneDark}
-          wrapLines={true}
-        >
+        <SyntaxHighlighter language="javascript" style={atomOneDark} wrapLines={true}>
           {IMPLEMENTATION[0]}
         </SyntaxHighlighter>
       </div>
       <h3>Implementation 2</h3>
       <div className="código-row">
-        <SyntaxHighlighter
-          language="javascript"
-          style={atomOneDark}
-          wrapLines={true}
-        >
+        <SyntaxHighlighter language="javascript" style={atomOneDark} wrapLines={true}>
           {IMPLEMENTATION[1]}
         </SyntaxHighlighter>
       </div>

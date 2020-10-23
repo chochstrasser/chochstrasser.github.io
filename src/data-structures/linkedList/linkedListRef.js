@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const ReferenceButton = styled.a`
   + a {
@@ -11,10 +11,7 @@ const LinkedListRef = () => {
     <>
       <h3>References</h3>
       <div className="código-section">
-        <ReferenceButton
-          className="código-button código-hover-teal código-teal"
-          href="https://en.wikipedia.org/wiki/Linked_list"
-        >
+        <ReferenceButton className="código-button código-hover-teal código-teal" href="https://en.wikipedia.org/wiki/Linked_list">
           Wikipedia
         </ReferenceButton>
         <ReferenceButton

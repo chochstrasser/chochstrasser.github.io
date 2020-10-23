@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const ReferenceButton = styled.a`
   + a {
@@ -17,10 +17,7 @@ const Reference = () => {
         >
           Geeks for Geeks
         </ReferenceButton>
-        <ReferenceButton
-          className="código-button código-hover-teal código-teal"
-          href="https://www.youtube.com/watch?v=gJOgI8TpSgc"
-        >
+        <ReferenceButton className="código-button código-hover-teal código-teal" href="https://www.youtube.com/watch?v=gJOgI8TpSgc">
           YouTube
         </ReferenceButton>
       </div>

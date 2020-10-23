@@ -3,14 +3,11 @@ const floodFillAlgorithm = (list, x, y) => {
   let visited = {};
   const floodFill = (list, x, y) => {
     if (!list[x] || !list[x][y]) return;
-    if (
-      list[x][y] === 0 ||
-      (typeof visited[x + "," + y] !== "undefined" && visited[x + "," + y])
-    ) {
+    if (list[x][y] === 0 || (typeof visited[x + ',' + y] !== 'undefined' && visited[x + ',' + y])) {
       return;
     }
     count++;
-    visited[x + "," + y] = true;
+    visited[x + ',' + y] = true;
     floodFill(list, x, y - 1);
     floodFill(list, x, y + 1);
     floodFill(list, x - 1, y);

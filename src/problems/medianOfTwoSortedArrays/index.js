@@ -1,9 +1,9 @@
-import styled from "styled-components";
-import { useHistory } from "react-router-dom";
-import Code from "./code";
-import Reference from "./reference";
-import Detail from "./detail";
-import ROUTES from "../../const/routes";
+import styled from 'styled-components';
+import { useHistory } from 'react-router-dom';
+import Code from './code';
+import Reference from './reference';
+import Detail from './detail';
+import ROUTES from '../../const/routes';
 
 const Wrapper = styled.div`
   max-width: 1400px;
@@ -35,16 +35,11 @@ const MedianOfTwoSortedArrays = ({ showModal }) => {
         <div className="código-bar">
           <button
             className="código-button código-left código-teal código-hover-teal"
-            onClick={handleClick(
-              ROUTES.problems.longestSubstringWithoutRepeatingCharacters
-            )}
+            onClick={handleClick(ROUTES.problems.longestSubstringWithoutRepeatingCharacters)}
           >
             ❮ Previous
           </button>
-          <button
-            className="código-button código-right código-teal código-hover-teal"
-            onClick={handleClick(ROUTES.problems.zigzag)}
-          >
+          <button className="código-button código-right código-teal código-hover-teal" onClick={handleClick(ROUTES.problems.zigzag)}>
             Next ❯
           </button>
         </div>
