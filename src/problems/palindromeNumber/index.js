@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import Code from "./code";
 import Reference from "./reference";

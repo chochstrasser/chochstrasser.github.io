@@ -1,4 +1,3 @@
-import React from "react";
 import { useLocation } from "react-router-dom";
 import ROUTES from "../const/routes";
 import NavLink from "./nav-link";

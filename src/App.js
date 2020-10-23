@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import { useState, useContext } from "react";
 import Router from "./utils/Router";
 import "./App.css";
 import { themeContext } from "./context/theme-context";

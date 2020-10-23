@@ -1,5 +1,3 @@
-import React from "react";
-
 const NavLink = ({ onClick, isActive, text }) => (
   <button
     className={`código-button código-block ${

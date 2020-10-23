@@ -1,4 +1,3 @@
-import React from "react";
 import { HashRouter, Route, Redirect } from "react-router-dom";
 
 // Normalize all paths to not have trailing slashes even if they

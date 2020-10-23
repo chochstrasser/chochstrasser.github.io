@@ -1,4 +1,3 @@
-import React from "react";
 import { RAPID_API } from "../../const/ids";
 
 const getRecipes = async (ingredients, searchWord, page) => {

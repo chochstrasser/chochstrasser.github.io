@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Board from "./board";
 import useCalculateWinner from "./useCalculateWinner";
 import { GameWrapper, Game, GameBoard, GameInfo } from "./tic-tac-toe-style";

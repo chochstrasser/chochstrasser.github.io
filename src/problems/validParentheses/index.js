@@ -1,4 +1,3 @@
-import React from "react";
 import { useHistory } from "react-router-dom";
 import Code from "./code";
 import Reference from "./reference";

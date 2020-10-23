@@ -1,4 +1,3 @@
-import React from "react";
 import PortfolioLeftColumn from "./portfolioLeftColumn";
 import PortfolioRightColumn from "./portfolioRightColumn";
 import Footer from "../footer";

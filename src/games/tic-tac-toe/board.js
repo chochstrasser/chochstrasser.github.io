@@ -1,4 +1,3 @@
-import React from "react";
 import Square from "./square";
 import { BoardRow } from "./tic-tac-toe-style";
 

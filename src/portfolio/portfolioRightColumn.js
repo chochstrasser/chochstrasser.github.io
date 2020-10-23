@@ -1,4 +1,3 @@
-import React from "react";
 import PortfolioWorkExperience from "./portfolioWorkExperience";
 import PortfolioEducation from "./portfolioEducation";
 import PortfolioCertifications from "./portfolioCertifications";

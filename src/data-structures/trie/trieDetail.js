@@ -1,4 +1,3 @@
-import React from "react";
 import TrieImage from "../../images/trie.svg";
 
 const TrieDetail = () => {
