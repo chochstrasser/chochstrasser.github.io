@@ -15,28 +15,29 @@ const Column = styled.div`
 `;
 
 const Button = styled.button`
-  width: 100%;
   cursor: pointer;
+  width: 100%;
+  background-color: ${(props) => props.active && '#cccccc'};
+  padding: 8px 16px;
+
+  :hover {
+    background-color: '#f1f1f1';
+  }
 `;
+
+const items = ['Push', 'pull'];
 
 const Tabs = ({ setTab, currentTab }) => {
   return (
     <Table>
       <Row>
-        <Column>
-          <Button onClick={() => setTab('push')}>
-            <div className="tablink código-bottombar código-hover-light-grey código-padding" active={currentTab === 'push'}>
-              Push
-            </div>
-          </Button>
-        </Column>
-        <Column>
-          <Button onClick={() => setTab('pull')}>
-            <div className="tablink código-bottombar código-hover-light-grey código-padding" active={currentTab === 'pull'}>
-              Pull
-            </div>
-          </Button>
-        </Column>
+        {items.map((item) => (
+          <Column>
+            <Button onClick={() => setTab(item.toLowerCase())} active={currentTab === item.toLowerCase()}>
+              {item}
+            </Button>
+          </Column>
+        ))}
       </Row>
     </Table>
   );
