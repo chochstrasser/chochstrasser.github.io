@@ -1,18 +1,28 @@
 import { useContext } from 'react';
 import { useHistory } from 'react-router-dom';
+import { useAuth0 } from '@auth0/auth0-react';
 import { NavBlur, LineWrapper, Line, Brand, FlexNavBar, NavBodyContent, FixedButton, FixedButtonBelow } from './nav-style';
 import { themeContext } from '../context/theme-context';
 import NavLinks from './nav-links';
+import LoginButton from '../components/login';
+import LogoutButton from '../components/logout';
 
 const Nav = ({ handleClick, elementId, showModal, setShowModal }) => {
   const { themeLight, onChangeTheme } = useContext(themeContext);
   const history = useHistory();
+  const { user, isAuthenticated, isLoading } = useAuth0();
 
   const handleNavItemClick = (path) => () => {
     document.getElementById(elementId).style.display = 'none';
     history.push(path);
     setShowModal(false);
   };
+
+  if (isLoading) {
+    return <div>Loading ...</div>;
+  }
+
+  console.log(user);
 
   return (
     <>
@@ -26,6 +36,7 @@ const Nav = ({ handleClick, elementId, showModal, setShowModal }) => {
               </LineWrapper>
             </button>
             <Brand>CH</Brand>
+            {isAuthenticated ? <LogoutButton /> : <LoginButton />}
           </FlexNavBar>
         </div>
       </NavBlur>
