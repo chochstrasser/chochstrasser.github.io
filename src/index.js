@@ -5,14 +5,14 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import ThemeProvider from './context/theme-context';
 import { Auth0Provider } from '@auth0/auth0-react';
+import config from './config';
 
-const DOMAIN = 'dev-chochstrasser.us.auth0.com';
-const CLIENT_ID = '2GYooVME1cqD7H3PjRn1kLrldoNE5h1R';
+console.log(config);
 
 ReactDOM.render(
   <StrictMode>
     <ThemeProvider>
-      <Auth0Provider domain={DOMAIN} clientId={CLIENT_ID} redirectUri={window.location.origin}>
+      <Auth0Provider domain={config.DOMAIN} clientId={config.CLIENT_ID} redirectUri={window.location.origin}>
         <App />
       </Auth0Provider>
     </ThemeProvider>

@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { useHistory } from 'react-router-dom';
 import { useAuth0 } from '@auth0/auth0-react';
-import { NavBlur, LineWrapper, Line, Brand, FlexNavBar, NavBodyContent, FixedButton, FixedButtonBelow } from './nav-style';
+import { NavBlur, LineWrapper, Line, FlexNavBar, NavBodyContent, FixedButton, FixedButtonBelow } from './nav-style';
 import { themeContext } from '../context/theme-context';
 import NavLinks from './nav-links';
 import LoginButton from '../components/login';
@@ -35,7 +35,7 @@ const Nav = ({ handleClick, elementId, showModal, setShowModal }) => {
                 <Line showModal={showModal} />
               </LineWrapper>
             </button>
-            <Brand>CH</Brand>
+            <div>CH</div>
             {isAuthenticated ? <LogoutButton /> : <LoginButton />}
           </FlexNavBar>
         </div>
