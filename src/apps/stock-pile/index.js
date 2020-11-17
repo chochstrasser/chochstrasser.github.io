@@ -18,7 +18,7 @@ const StockPile = () => {
 
   return (
     <>
-      <h1>Stock Piles</h1>
+      <h1>Stock Pile</h1>
       <Tabs setTab={handleTabChange} currentTab={tab} />
       {tab && <SideBar currentTab={tab} setSideBarLink={handleSideBarChange} />}
       <MainContent currentTab={tab} sideBarLink={sideBarLink} />
