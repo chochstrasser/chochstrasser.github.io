@@ -5,7 +5,7 @@ describe('Add two numbers', () => {
     const l1 = ListNode(5);
     const l2 = ListNode(5);
     const result = AddTwoNumbers(l1, l2);
-    expect(result.val).toBe(0);
+    expect(result.val).toBe(10);
     expect(result.next.val).toBe(1);
   });
 
