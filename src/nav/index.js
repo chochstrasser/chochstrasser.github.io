@@ -1,14 +1,11 @@
-import { useContext } from 'react';
 import { useHistory } from 'react-router-dom';
 import { useAuth0 } from '@auth0/auth0-react';
-import { NavBlur, LineWrapper, Line, FlexNavBar, NavBodyContent, FixedButton, FixedButtonBelow } from './nav-style';
-import { themeContext } from '../context/theme-context';
+import { NavBlur, LineWrapper, Line, FlexNavBar, NavBodyContent } from './nav-style';
 import NavLinks from './nav-links';
 import LoginButton from '../components/login';
 import LogoutButton from '../components/logout';
 
 const Nav = ({ handleClick, elementId, showModal, setShowModal }) => {
-  const { themeLight, onChangeTheme } = useContext(themeContext);
   const history = useHistory();
   const { user, isAuthenticated, isLoading } = useAuth0();
 
@@ -40,17 +37,6 @@ const Nav = ({ handleClick, elementId, showModal, setShowModal }) => {
           </FlexNavBar>
         </div>
       </NavBlur>
-      {/* 
-      <FixedButtonBelow
-        className={`código-button código-round ${
-          themeLight
-            ? "código-teal código-hover-teal"
-            : "código-light-grey código-hover-light-grey"
-        }`}
-        onClick={() => onChangeTheme(!themeLight)}
-      >
-        {`${themeLight ? "light" : "dark"}`}
-      </FixedButtonBelow> */}
       <NavBodyContent id={elementId} className="código-modal">
         <NavLinks onClick={handleNavItemClick} />
       </NavBodyContent>

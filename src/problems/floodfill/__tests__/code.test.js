@@ -1,4 +1,4 @@
-import FloodFill from '../../../utils/floodFill';
+import FloodFill from '../../../utils/floodfill';
 
 describe('Flood Fill', () => {
   it('should return 2', () => {

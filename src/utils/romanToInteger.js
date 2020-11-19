@@ -1,4 +1,4 @@
-export const romanToInt = (s) => {
+const romanToInt = (s) => {
   const convert = {
     I: 1,
     V: 5,
@@ -21,3 +21,5 @@ export const romanToInt = (s) => {
   }
   return result;
 };
+
+export default romanToInt;
