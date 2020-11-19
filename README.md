@@ -19,13 +19,13 @@ URL: https://chochstrasser.github.io
 
 #### Problems
 
-1. [Two sum](https://chochstrasser.github.io/#/twoSum)
-2. [Add two numbers](https://chochstrasser.github.io/#/add-two-numbers)
-3. [Longest subString without repeating characters](https://chochstrasser.github.io/#/longest-substring-without-repeating-characters)
-4. [Zig zag conversion](https://chochstrasser.github.io/#/zigzag-conversion)
-5. [Palindrome number](https://chochstrasser.github.io/#/palindrome-number)
-6. [Longest common prefix](https://chochstrasser.github.io/#/longest-common-prefix)
-7. [FloodFill](https://chochstrasser.github.io/#/floodfill)
+1. [Two sum](https://chochstrasser.github.io/#/problems/twoSum)
+2. [Add two numbers](https://chochstrasser.github.io/#/problems/add-two-numbers)
+3. [Longest subString without repeating characters](https://chochstrasser.github.io/#/problems/longest-substring-without-repeating-characters)
+4. [Zig zag conversion](https://chochstrasser.github.io/#/problems/zigzag-conversion)
+5. [Palindrome number](https://chochstrasser.github.io/#/problems/palindrome-number)
+6. [Longest common prefix](https://chochstrasser.github.io/#/problems/longest-common-prefix)
+7. [FloodFill](https://chochstrasser.github.io/#/problems/floodFill)
 
 #### Making Changes
 
