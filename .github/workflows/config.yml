@@ -2,8 +2,7 @@ name: Node CI
 
 on:
   pull_request:
-    branches: [ source ]
-
+    branches: [source]
 
 jobs:
   test_pull_request:
