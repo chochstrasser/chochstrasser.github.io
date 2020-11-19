@@ -15,7 +15,7 @@ const ROUTES = {
     'valid-parentheses': '/problems/valid-parentheses',
     'merge-two-sorted-lists': '/problems/merge-two-sorted-lists',
     flatten: '/problems/flatten',
-    floodFill: '/problems/floodFill',
+    floodFill: '/problems/floodfill',
   },
   games: {
     'tic-tac-toe': '/games/tic-tac-toe',

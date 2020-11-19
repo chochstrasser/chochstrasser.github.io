@@ -21,7 +21,7 @@ import LongestCommonPrefix from './problems/longestCommonPrefix';
 import ValidParentheses from './problems/validParentheses';
 import MergeTwoSortedLists from './problems/mergeTwoSortedLists';
 import Flatten from './problems/flatten';
-import FloodFill from './problems/floodFill';
+import FloodFill from './problems/floodfill';
 
 // Games
 import TicTacToe from './games/tic-tac-toe';
