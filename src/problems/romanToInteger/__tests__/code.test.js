@@ -1,22 +1,28 @@
-import FloodFill from '../../../utils/floodFill';
+import romanToInt from '../../../utils/romanToInteger';
 
-describe('Flood Fill', () => {
-  it('should return 2', () => {
-    const result = FloodFill([[0, 0, 0, 0, 1, 1, 0, 0, 0, 0]], 0, 4);
-    expect(result).toBe(2);
+describe('Roman to integer', () => {
+  it('should return 3', () => {
+    const result = romanToInt('III');
+    expect(result).toBe(3);
   });
 
-  it('should return 5', () => {
-    const result = FloodFill(
-      [
-        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 1, 1, 0, 0, 0, 0],
-        [0, 0, 0, 0, 1, 1, 1, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-      ],
-      2,
-      6
-    );
-    expect(result).toBe(5);
+  it('should return 4', () => {
+    const result = romanToInt('IV');
+    expect(result).toBe(4);
+  });
+
+  it('should return 9', () => {
+    const result = romanToInt('IX');
+    expect(result).toBe(9);
+  });
+
+  it('should return 58', () => {
+    const result = romanToInt('LVIII');
+    expect(result).toBe(58);
+  });
+
+  it('should return 1994', () => {
+    const result = romanToInt('MCMXCIV');
+    expect(result).toBe(1994);
   });
 });
