@@ -1,11 +1,11 @@
-name: Node CI
+name: Node CI/CD
 
 on:
-  pull_request:
+  push:
     branches: [source]
 
 jobs:
-  pull_request:
+  deployment:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,3 +19,5 @@ jobs:
           yarn --frozen-lockfile
           yarn test
           yarn build
+      - name: Deploy
+        run: yarn deploy
