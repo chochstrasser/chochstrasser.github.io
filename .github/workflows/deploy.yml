@@ -10,14 +10,30 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: master
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: '12.x'
-      - name: yarn install, build, and test
+          node-version: '14.x'
+      - name: merge source into master
+        run: git merge source
+      - name: checkout source
+        run: git checkout source
+      - name: install
+        run: yarn --frozen-lockfile
+      - name: test
+        run: yarn test
+      - name: build
+        run: yarn build
+      - name: deploy
         run: |
-          yarn --frozen-lockfile
-          yarn test
-          yarn build
-      - name: Deploy
-        run: yarn deploy
+        git config --global user.name $user_name
+        git config --global user.email $user_email
+        git remote set-url origin https://${github_token}@github.com/${repository}
+        yarn deploy
+      env:
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'
+        github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
+        repository: ${{ github.repository }}
