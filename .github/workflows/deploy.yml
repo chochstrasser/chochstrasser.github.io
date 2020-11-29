@@ -10,15 +10,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
           node-version: '14.x'
-
       - uses: actions/checkout@v2
-      - name: checkout master
-        with:
-          ref: master
       - name: merge source into master
         run: git merge source
       - name: checkout source
@@ -31,8 +29,12 @@ jobs:
         run: yarn build
       - name: deploy
         run: |
+          git config --global user.name chochstrasser
+          git config --global user.email chase.hochstrasser@gmail.com
           git remote set-url origin https://${github_token}@github.com/${repository}
           yarn deploy
         env:
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
           github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
           repository: ${{ github.repository }}
