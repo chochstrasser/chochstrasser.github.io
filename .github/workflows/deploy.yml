@@ -29,8 +29,12 @@ jobs:
         run: yarn build
       - name: deploy
         run: |
+          git config --global user.name chochstrasser
+          git config --global user.email chase.hochstrasser@gmail.com
           git remote set-url origin https://${github_token}@github.com/${repository}
           yarn deploy
         env:
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
           github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
           repository: ${{ github.repository }}
