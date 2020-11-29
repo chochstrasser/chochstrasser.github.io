@@ -35,4 +35,3 @@ jobs:
         env:
           github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
           repository: ${{ github.repository }}
-          repository: ${{ github.repository }}
