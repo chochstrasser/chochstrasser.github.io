@@ -10,14 +10,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Checkout master
-      - uses: actions/checkout@v2
-        with:
-          ref: master
       - name: Use Node.js
         uses: actions/setup-node@v1
         with:
           node-version: '14.x'
+      - uses: actions/checkout@v2
+      - name: checkout master
+        with:
+          ref: master
       - name: merge source into master
         run: git merge source
       - name: checkout source
