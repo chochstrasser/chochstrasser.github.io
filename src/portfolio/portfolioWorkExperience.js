@@ -9,7 +9,17 @@ const PortfolioWorkExperience = () => {
       </h2>
       <div className="código-container">
         <h5 className="código-opacity">
-          <b>Front End Developer / SoFi</b>
+          <b>Senior Engineer, Front End / SoFi</b>
+        </h5>
+        <h6 className="código-text-teal">
+          <FontAwesomeIcon className="código-margin-right código-text-teal" icon="calendar-alt" />
+          Sep 2020 - <span className="código-tag código-teal código-round">Current</span>
+        </h6>
+        <hr />
+      </div>
+      <div className="código-container">
+        <h5 className="código-opacity">
+          <b>Engineer, Front End / SoFi</b>
         </h5>
         <h6 className="código-text-teal">
           <FontAwesomeIcon className="código-margin-right código-text-teal" icon="calendar-alt" />
@@ -19,7 +29,7 @@ const PortfolioWorkExperience = () => {
       </div>
       <div className="código-container">
         <h5 className="código-opacity">
-          <b>Software Engineer / SkyWest</b>
+          <b>Engineer, Software / SkyWest</b>
         </h5>
         <h6 className="código-text-teal">
           <FontAwesomeIcon className="código-margin-right código-text-teal" icon="calendar-alt" />
@@ -29,7 +39,7 @@ const PortfolioWorkExperience = () => {
       </div>
       <div className="código-container">
         <h5 className="código-opacity">
-          <b>Web Developer / dōTERRA</b>
+          <b>Developer, Web / dōTERRA</b>
         </h5>
         <h6 className="código-text-teal">
           <FontAwesomeIcon className="código-margin-right código-text-teal" icon="calendar-alt" />
@@ -39,7 +49,7 @@ const PortfolioWorkExperience = () => {
       </div>
       <div className="código-container">
         <h5 className="código-opacity">
-          <b>Student Software Engineer / Rocky Mountain Power</b>
+          <b>Engineer, Student Software / Rocky Mountain Power</b>
         </h5>
         <h6 className="código-text-teal">
           <FontAwesomeIcon className="código-margin-right código-text-teal" icon="calendar-alt" />
