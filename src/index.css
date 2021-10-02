@@ -1165,7 +1165,10 @@ a {
 .código-padding {
   padding: 8px 16px !important;
 }
-.código-padding-top {
+.código-padding-top-2 {
+  padding-top: 2rem !important;
+}
+.código-padding-top-3 {
   padding-top: 3rem !important;
 }
 .código-padding-large {

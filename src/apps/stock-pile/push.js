@@ -30,7 +30,7 @@ const fetchAndPushStock = async (ticker) => {
     let data = await response.json();
     return data;
   } catch (error) {
-    console.log(error);
+    console.log('error', error);
     return error;
   }
 };
@@ -65,6 +65,8 @@ const PushPage = () => {
     const { value } = event.target;
     setState((prevState) => ({ ...prevState, inputValue: value }));
   };
+
+  console.log(state);
 
   return (
     <>

@@ -8,20 +8,16 @@ const progressBar80 = {
   width: '80%',
 };
 
-const progressBar47 = {
-  width: '47%',
+const progressBar27 = {
+  width: '27%',
 };
 
-const progressBar50 = {
-  width: '50%',
+const progressBar30 = {
+  width: '30%',
 };
 
 const progressBar20 = {
   width: '20%',
-};
-
-const progressBar60 = {
-  width: '60%',
 };
 
 const PortfolioSkills = () => (
@@ -44,28 +40,22 @@ const PortfolioSkills = () => (
         <div className="código-center código-text-white">80%</div>
       </div>
     </div>
-    <p>WordPress</p>
+    <p>Flutter</p>
     <div className="código-light-grey código-round-xlarge código-small">
-      <div className="código-container código-center código-round-xlarge código-teal" style={progressBar47}>
-        47%
+      <div className="código-container código-center código-round-xlarge código-teal" style={progressBar30}>
+        30%
       </div>
     </div>
-    <p>Algorithms</p>
+    <p>Android</p>
     <div className="código-light-grey código-round-xlarge código-small">
-      <div className="código-container código-center código-round-xlarge código-teal" style={progressBar50}>
-        50%
+      <div className="código-container código-center código-round-xlarge código-teal" style={progressBar27}>
+        27%
       </div>
     </div>
-    <p>Angular</p>
+    <p>Swift</p>
     <div className="código-light-grey código-round-xlarge código-small">
       <div className="código-container código-center código-round-xlarge código-teal" style={progressBar20}>
         20%
-      </div>
-    </div>
-    <p>C#</p>
-    <div className="código-light-grey código-round-xlarge código-small">
-      <div className="código-container código-center código-round-xlarge código-teal" style={progressBar60}>
-        60%
       </div>
     </div>
   </>

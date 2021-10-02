@@ -9,10 +9,10 @@ const NavLinks = ({ onClick }) => {
     <div className="código-animate-top código-card-4 código-white">
       <div>
         <NavLink onClick={onClick(ROUTES.default)} isActive={pathname === ROUTES.default} text="Portfolio" />
-        <h4 className="código-center">Data Structures</h4>
+        <h4 className="código-center código-border-bottom código-padding-top-2">Data Structures</h4>
         <NavLink onClick={onClick(ROUTES.linkedList)} isActive={pathname === ROUTES.linkedList} text="Linked list" />
         <NavLink onClick={onClick(ROUTES.trie)} isActive={pathname === ROUTES.trie} text="Trie" />
-        <h4 className="código-center">Problems</h4>
+        <h4 className="código-center código-border-bottom código-padding-top-2">Problems</h4>
         <NavLink onClick={onClick(ROUTES.problems.twoSum)} isActive={pathname === ROUTES.problems.twoSum} text="Two sum" />
         <NavLink
           onClick={onClick(ROUTES.problems.addTwoNumbers)}
@@ -62,9 +62,9 @@ const NavLinks = ({ onClick }) => {
         />
         <NavLink onClick={onClick(ROUTES.problems.flatten)} isActive={pathname === ROUTES.problems.flatten} text="Flatten" />
         <NavLink onClick={onClick(ROUTES.problems.floodFill)} isActive={pathname === ROUTES.problems.floodFill} text="Flood Fill" />
-        <h4 className="código-center">Game</h4>
+        <h4 className="código-center código-border-bottom código-padding-top-2">Game</h4>
         <NavLink onClick={onClick(ROUTES.games['tic-tac-toe'])} isActive={pathname === ROUTES.games['tic-tac-toe']} text="Tic-Tac-Toe" />
-        <h4 className="código-center">Apps</h4>
+        <h4 className="código-center código-border-bottom código-padding-top-2">Apps</h4>
         <NavLink onClick={onClick(ROUTES.apps['recipes'])} isActive={pathname === ROUTES.apps['recipes']} text="Recipes" />
         <NavLink onClick={onClick(ROUTES.apps['stock-pile'])} isActive={pathname === ROUTES.apps['stock-pile']} text="Stock pile" />
       </div>

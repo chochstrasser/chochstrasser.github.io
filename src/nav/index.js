@@ -4,6 +4,12 @@ import { NavBlur, LineWrapper, Line, FlexNavBar, NavBodyContent } from './nav-st
 import NavLinks from './nav-links';
 import LoginButton from '../components/login';
 import LogoutButton from '../components/logout';
+import styled from 'styled-components';
+
+const Flex = styled.div`
+  display: flex;
+  flex: 1;
+`;
 
 const Nav = ({ handleClick, elementId, showModal, setShowModal }) => {
   const history = useHistory();
@@ -19,19 +25,21 @@ const Nav = ({ handleClick, elementId, showModal, setShowModal }) => {
     return <div>Loading ...</div>;
   }
 
-  console.log(user);
+  console.log('user', user);
 
   return (
     <>
       <NavBlur className="código-top">
         <div className="código-bar código-black código-opacity-min">
           <FlexNavBar>
-            <button onClick={handleClick(showModal ? 'none' : 'block')} className="código-bar-item código-button código-hover-black">
-              <LineWrapper>
-                <Line showModal={showModal} />
-                <Line showModal={showModal} />
-              </LineWrapper>
-            </button>
+            <Flex>
+              <button onClick={handleClick(showModal ? 'none' : 'block')} className="código-bar-item código-button código-hover-black">
+                <LineWrapper>
+                  <Line showModal={showModal} />
+                  <Line showModal={showModal} />
+                </LineWrapper>
+              </button>
+            </Flex>
             <div>CH</div>
             {isAuthenticated ? <LogoutButton /> : <LoginButton />}
           </FlexNavBar>

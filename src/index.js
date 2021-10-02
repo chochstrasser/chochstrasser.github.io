@@ -7,7 +7,7 @@ import ThemeProvider from './context/theme-context';
 import { Auth0Provider } from '@auth0/auth0-react';
 import config from './config';
 
-console.log(config);
+console.log('config', config);
 
 ReactDOM.render(
   <StrictMode>
