@@ -32,7 +32,7 @@ const Tabs = ({ setTab, currentTab }) => {
     <Table>
       <Row>
         {items.map((item) => (
-          <Column>
+          <Column key={item}>
             <Button onClick={() => setTab(item.toLowerCase())} active={currentTab === item.toLowerCase()}>
               {item}
             </Button>

@@ -23,7 +23,7 @@ const PortfolioWorkExperience = () => {
         </h5>
         <h6 className="código-text-teal">
           <FontAwesomeIcon className="código-margin-right código-text-teal" icon="calendar-alt" />
-          Apr 2019 - <span className="código-tag código-teal código-round">Current</span>
+          Apr 2019 - Sep 2020
         </h6>
         <hr />
       </div>
