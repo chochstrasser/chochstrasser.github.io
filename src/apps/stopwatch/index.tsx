@@ -1,15 +1,12 @@
 import * as React from 'react';
+import useStopwatch from './use-stopwatch';
 
 type Props = {
   showModal: boolean;
 };
 
 const Stopwatch = ({ showModal }: Props) => {
-  const [timer, setTimer] = React.useState(0);
-
-  const handleStart = () => {
-    setTimer(1);
-  };
+  const { time, isActive, isPaused, handleStart, handleStop, handleResume, handleReset } = useStopwatch();
 
   if (showModal) {
     return null;
@@ -18,8 +15,13 @@ const Stopwatch = ({ showModal }: Props) => {
   return (
     <>
       <h1>STOPWATCH</h1>
-      <div>{timer}</div>
-      <button onClick={handleStart}>START</button>
+      <p>{time}</p>
+      <>
+        {!isActive && isPaused && <button onClick={handleStart}>Start</button>}
+        {isActive && isPaused && <button onClick={handleResume}>Resume</button>}
+        {!isPaused && <button onClick={handleStop}>Stop</button>}
+        <button onClick={handleReset}>Reset</button>
+      </>
     </>
   );
 };
