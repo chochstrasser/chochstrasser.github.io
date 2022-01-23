@@ -3,7 +3,7 @@ import Tabs from './tabs';
 import SideBar from './sideBar';
 import MainContent from './content';
 
-const StockPile = () => {
+const StockPile = ({ showModal }) => {
   const [tab, setTab] = useState(null);
   const [sideBarLink, setSideBarLink] = useState(null);
 
@@ -15,6 +15,10 @@ const StockPile = () => {
   const handleSideBarChange = (value) => {
     setSideBarLink(value);
   };
+
+  if (showModal) {
+    return null;
+  }
 
   return (
     <>

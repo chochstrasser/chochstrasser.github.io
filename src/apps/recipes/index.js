@@ -11,7 +11,7 @@ const getRecipes = async (ingredients, searchWord, page) => {
   console.log('response', response);
 };
 
-const Recipes = () => {
+const Recipes = ({ showModal }) => {
   const onClick = async () => {
     const ingredients = 'onions,beef';
     const searchWord = 'hamburger';
@@ -19,6 +19,10 @@ const Recipes = () => {
     const response = await getRecipes(ingredients, searchWord, page);
     console.log('response', response);
   };
+
+  if (showModal) {
+    return null;
+  }
 
   return (
     <>

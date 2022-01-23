@@ -15,7 +15,7 @@ const INITIAL_STATE = {
   xIsNext: true,
 };
 
-const TicTacToe = () => {
+const TicTacToe = ({ showModal }) => {
   const [state, setState] = useState(INITIAL_STATE);
   const current = state.history[state.stepNumber];
   const { status, winner } = useCalculateWinner({
@@ -45,6 +45,10 @@ const TicTacToe = () => {
       xIsNext: step % 2 === 0,
     }));
   };
+
+  if (showModal) {
+    return null;
+  }
 
   return (
     <GameWrapper>
