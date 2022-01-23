@@ -23,6 +23,7 @@ const ROUTES = {
   apps: {
     recipes: '/apps/recipes',
     'stock-pile': '/apps/stock-pile',
+    stopwatch: '/apps/stopwatch',
   },
 };
 

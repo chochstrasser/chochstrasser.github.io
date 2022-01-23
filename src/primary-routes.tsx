@@ -29,6 +29,7 @@ import TicTacToe from './games/tic-tac-toe';
 // Apps
 import Recipes from './apps/recipes';
 import StockPile from './apps/stock-pile';
+import Stopwatch from './apps/stopwatch';
 
 type Props = {
   showModal: boolean;
@@ -59,6 +60,7 @@ const PrimaryRoutes = (props: Props) => {
       <Route path={ROUTES.games['tic-tac-toe']} render={() => <TicTacToe {...props} />} />
       <Route path={ROUTES.apps['recipes']} render={() => <Recipes {...props} />} />
       <Route path={ROUTES.apps['stock-pile']} render={() => <StockPile {...props} />} />
+      <Route path={ROUTES.apps.stopwatch} render={() => <Stopwatch {...props} />} />
       <Route component={FourZeroFour} />
     </Switch>
   );
