@@ -11,7 +11,7 @@ const useStopwatch = () => {
     setIsPaused(false);
     counterRef.current = window.setInterval(() => {
       setMilliseconds((milliseconds) => milliseconds + 1);
-    }, 1);
+    }, 10);
   };
 
   const handleStop = () => {
@@ -23,7 +23,7 @@ const useStopwatch = () => {
     setIsPaused(false);
     counterRef.current = window.setInterval(() => {
       setMilliseconds((milliseconds) => milliseconds + 1);
-    }, 1);
+    }, 10);
   };
 
   const handleReset = () => {
@@ -34,14 +34,14 @@ const useStopwatch = () => {
   };
 
   const formatTime = (milliseconds: number) => {
-    const totalSeconds = Math.floor(milliseconds / 1000);
+    const totalSeconds = Math.floor(milliseconds / 100);
     const totalMinutes = Math.floor(totalSeconds / 60);
     const totalHours = Math.floor(totalMinutes / 60);
 
     const seconds = `0${totalSeconds % 60}`.slice(-2);
     const minutes = `0${totalMinutes % 60}`.slice(-2);
     const hours = `0${totalHours % 24}`.slice(-2);
-    const ms = `00${milliseconds}`.slice(-3, -1);
+    const ms = `0${milliseconds}`.slice(-2);
 
     return `${hours} : ${minutes} : ${seconds}: ${ms}`;
   };
