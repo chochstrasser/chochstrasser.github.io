@@ -11,8 +11,8 @@ const App = () => {
   const { themeLight } = useContext(themeContext);
   const [showModal, setShowModal] = useState(false);
 
-  const handleClick = (display) => () => {
-    document.getElementById(MODAL_ID).style.display = display;
+  const handleClick = (display: string) => () => {
+    document.getElementById(MODAL_ID)!.style.display = display;
     setShowModal(display === 'block');
   };
 

@@ -30,7 +30,11 @@ import TicTacToe from './games/tic-tac-toe';
 import Recipes from './apps/recipes';
 import StockPile from './apps/stock-pile';
 
-const PrimaryRoutes = (props) => {
+type Props = {
+  showModal: boolean;
+};
+
+const PrimaryRoutes = (props: Props) => {
   return (
     <Switch>
       <Route exact path={ROUTES.default} render={() => <Portfolio {...props} />} />
