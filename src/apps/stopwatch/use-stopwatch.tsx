@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { timerParts } from '../../utils/time';
 
 const useStopwatch = () => {
   const [milliseconds, setMilliseconds] = React.useState(0);
@@ -9,8 +10,13 @@ const useStopwatch = () => {
   const handleStart = () => {
     setIsActive(true);
     setIsPaused(false);
+
+    if (counterRef.current) {
+      clearInterval(counterRef.current);
+    }
+
     counterRef.current = window.setInterval(() => {
-      setMilliseconds((milliseconds) => milliseconds + 1);
+      setMilliseconds((milliseconds) => milliseconds + 10);
     }, 10);
   };
 
@@ -22,7 +28,7 @@ const useStopwatch = () => {
   const handleResume = () => {
     setIsPaused(false);
     counterRef.current = window.setInterval(() => {
-      setMilliseconds((milliseconds) => milliseconds + 1);
+      setMilliseconds((milliseconds) => milliseconds + 10);
     }, 10);
   };
 
@@ -33,22 +39,9 @@ const useStopwatch = () => {
     setMilliseconds(0);
   };
 
-  const formatTime = (milliseconds: number) => {
-    const totalSeconds = Math.floor(milliseconds / 100);
-    const totalMinutes = Math.floor(totalSeconds / 60);
-    const totalHours = Math.floor(totalMinutes / 60);
+  const { seconds, minutes, hours } = timerParts(milliseconds);
 
-    const seconds = `0${totalSeconds % 60}`.slice(-2);
-    const minutes = `0${totalMinutes % 60}`.slice(-2);
-    const hours = `0${totalHours % 24}`.slice(-2);
-    const ms = `0${milliseconds}`.slice(-2);
-
-    return `${hours} : ${minutes} : ${seconds}: ${ms}`;
-  };
-
-  const time = formatTime(milliseconds);
-
-  return { time, isActive, isPaused, handleStart, handleStop, handleResume, handleReset };
+  return { milliseconds, seconds, minutes, hours, isActive, isPaused, handleStart, handleStop, handleResume, handleReset };
 };
 
 export default useStopwatch;
