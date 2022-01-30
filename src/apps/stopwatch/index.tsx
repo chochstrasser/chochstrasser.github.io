@@ -1,3 +1,4 @@
+import { timerParts } from '../../utils/time';
 import useStopwatch from './use-stopwatch';
 
 type Props = {
@@ -5,7 +6,8 @@ type Props = {
 };
 
 const Stopwatch = ({ showModal }: Props) => {
-  const { milliseconds, seconds, minutes, hours, isActive, isPaused, handleStart, handleStop, handleResume, handleReset } = useStopwatch();
+  const { timer, turnedOn, setTurnedOn, setTimer } = useStopwatch();
+  const { seconds, minutes, hours } = timerParts(timer);
 
   if (showModal) {
     return null;
@@ -17,13 +19,13 @@ const Stopwatch = ({ showModal }: Props) => {
       <h3>
         {hours ? `${hours}:` : ''}
         {minutes ? `${minutes}:` : ''}
-        {`${`0${seconds}`.slice(-2)}:${`00${milliseconds}`.slice(-3, -1)}`}
+        {`${`0${seconds}`.slice(-2)}:${`00${timer}`.slice(-3, -1)}`}
       </h3>
       <div>
-        {!isActive && isPaused && <button onClick={handleStart}>Start</button>}
-        {isActive && isPaused && <button onClick={handleResume}>Resume</button>}
-        {!isPaused && <button onClick={handleStop}>Stop</button>}
-        <button onClick={handleReset}>Reset</button>
+        {!turnedOn && timer === 0 && <button onClick={() => setTurnedOn(true)}>Start</button>}
+        {turnedOn && <button onClick={() => setTurnedOn(false)}>Stop</button>}
+        {!turnedOn && timer !== 0 && <button onClick={() => setTurnedOn(true)}>Resume</button>}
+        {!turnedOn && timer > 0 && <button onClick={() => setTimer(0)}>Reset</button>}
       </div>
     </div>
   );
