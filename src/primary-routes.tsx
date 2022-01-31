@@ -15,6 +15,7 @@ import LongestSubStringWithoutRepeatingCharacters from './problems/longestSubStr
 import MedianOfTwoSortedArrays from './problems/medianOfTwoSortedArrays';
 import ZigZag from './problems/zigZag';
 import ReverseInteger from './problems/reverseInteger';
+import NumberOfIslands from './problems/numberOfIslands';
 import PalindromeNumber from './problems/palindromeNumber';
 import RomanToInteger from './problems/romanToInteger';
 import LongestCommonPrefix from './problems/longestCommonPrefix';
@@ -50,6 +51,7 @@ const PrimaryRoutes = (props: Props) => {
       <Route path={ROUTES.problems['median-of-two-sorted-arrays']} render={() => <MedianOfTwoSortedArrays {...props} />} />
       <Route path={ROUTES.problems.zigzag} render={() => <ZigZag {...props} />} />
       <Route path={ROUTES.problems['reverse-integer']} render={() => <ReverseInteger {...props} />} />
+      <Route path={ROUTES.problems['number-of-islands']} render={() => <NumberOfIslands {...props} />} />
       <Route path={ROUTES.problems['palindrome-number']} render={() => <PalindromeNumber {...props} />} />
       <Route path={ROUTES.problems['roman-to-integer']} render={() => <RomanToInteger {...props} />} />
       <Route path={ROUTES.problems['longest-common-prefix']} render={() => <LongestCommonPrefix {...props} />} />

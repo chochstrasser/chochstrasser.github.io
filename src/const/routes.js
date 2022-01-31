@@ -9,6 +9,7 @@ const ROUTES = {
     'median-of-two-sorted-arrays': '/problems/median-of-two-sorted-arrays',
     zigzag: '/problems/zigzag-conversion',
     'reverse-integer': '/problems/reverse-integer',
+    'number-of-islands': '/problems/number-of-islands',
     'palindrome-number': '/problems/palindrome-number',
     'roman-to-integer': '/problems/roman-to-integer',
     'longest-common-prefix': '/problems/longest-common-prefix',
