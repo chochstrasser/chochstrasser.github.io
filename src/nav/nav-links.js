@@ -36,6 +36,11 @@ const NavLinks = ({ onClick }) => {
           text="Reverse integer"
         />
         <NavLink
+          onClick={onClick(ROUTES.problems['number-of-islands'])}
+          isActive={pathname === ROUTES.problems['number-of-islands']}
+          text="Number of islands"
+        />
+        <NavLink
           onClick={onClick(ROUTES.problems['palindrome-number'])}
           isActive={pathname === ROUTES.problems['palindrome-number']}
           text="Palindrome number"
