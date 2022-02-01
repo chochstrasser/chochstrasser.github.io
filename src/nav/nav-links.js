@@ -71,6 +71,7 @@ const NavLinks = ({ onClick }) => {
         <NavLink onClick={onClick(ROUTES.games['tic-tac-toe'])} isActive={pathname === ROUTES.games['tic-tac-toe']} text="Tic-Tac-Toe" />
         <h4 className="código-center código-border-bottom código-padding-top-2">Apps</h4>
         <NavLink onClick={onClick(ROUTES.apps['recipes'])} isActive={pathname === ROUTES.apps['recipes']} text="Recipes" />
+        <NavLink onClick={onClick(ROUTES.apps['star-wars'])} isActive={pathname === ROUTES.apps['star-wars']} text="Star Wars Api" />
         <NavLink onClick={onClick(ROUTES.apps['stock-pile'])} isActive={pathname === ROUTES.apps['stock-pile']} text="Stock pile" />
         <NavLink onClick={onClick(ROUTES.apps.stopwatch)} isActive={pathname === ROUTES.apps.stopwatch} text="Stopwatch" />
       </div>
