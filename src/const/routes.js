@@ -22,6 +22,7 @@ const ROUTES = {
     'tic-tac-toe': '/games/tic-tac-toe',
   },
   apps: {
+    'star-wars': '/app/star-wars',
     recipes: '/apps/recipes',
     'stock-pile': '/apps/stock-pile',
     stopwatch: '/apps/stopwatch',
