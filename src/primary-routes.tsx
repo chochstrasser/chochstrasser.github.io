@@ -9,21 +9,22 @@ import LinkedList from './data-structures/linkedList';
 import Trie from './data-structures/trie';
 
 // Problems
-import TwoSum from './problems/twoSum';
 import AddTwoNumbers from './problems/addTwoNumbers';
 import CompoundWords from './problems/compoundWords';
-import LongestSubStringWithoutRepeatingCharacters from './problems/longestSubStringWithoutRepeatingCharacters';
-import MedianOfTwoSortedArrays from './problems/medianOfTwoSortedArrays';
-import ZigZag from './problems/zigZag';
-import ReverseInteger from './problems/reverseInteger';
-import NumberOfIslands from './problems/numberOfIslands';
-import PalindromeNumber from './problems/palindromeNumber';
-import RomanToInteger from './problems/romanToInteger';
-import LongestCommonPrefix from './problems/longestCommonPrefix';
-import ValidParentheses from './problems/validParentheses';
-import MergeTwoSortedLists from './problems/mergeTwoSortedLists';
 import Flatten from './problems/flatten';
 import FloodFill from './problems/floodFill';
+import LongestCommonPrefix from './problems/longestCommonPrefix';
+import LongestSubStringWithoutRepeatingCharacters from './problems/longestSubStringWithoutRepeatingCharacters';
+import MedianOfTwoSortedArrays from './problems/medianOfTwoSortedArrays';
+import MergeTwoSortedLists from './problems/mergeTwoSortedLists';
+import NumberOfIslands from './problems/numberOfIslands';
+import PalindromeNumber from './problems/palindromeNumber';
+import TwoSum from './problems/twoSum';
+import ReverseInteger from './problems/reverseInteger';
+import ReverseString from './problems/reverseString';
+import RomanToInteger from './problems/romanToInteger';
+import ValidParentheses from './problems/validParentheses';
+import ZigZag from './problems/zigZag';
 
 // Games
 import TicTacToe from './games/tic-tac-toe';
@@ -46,13 +47,14 @@ const PrimaryRoutes = (props: Props) => {
       <Route path={ROUTES.trie} render={() => <Trie {...props} />} />
       <Route path={ROUTES.problems.twoSum} render={() => <TwoSum {...props} />} />
       <Route path={ROUTES.problems.addTwoNumbers} render={() => <AddTwoNumbers {...props} />} />
-      <Route path={ROUTES.problems.compoundWords} render={() => <CompoundWords {...props} />} />
+      <Route path={ROUTES.problems['compound-words']} render={() => <CompoundWords {...props} />} />
       <Route
         path={ROUTES.problems.longestSubstringWithoutRepeatingCharacters}
         render={() => <LongestSubStringWithoutRepeatingCharacters {...props} />}
       />
       <Route path={ROUTES.problems['median-of-two-sorted-arrays']} render={() => <MedianOfTwoSortedArrays {...props} />} />
       <Route path={ROUTES.problems.zigzag} render={() => <ZigZag {...props} />} />
+      <Route path={ROUTES.problems['reverse-string']} render={() => <ReverseString {...props} />} />
       <Route path={ROUTES.problems['reverse-integer']} render={() => <ReverseInteger {...props} />} />
       <Route path={ROUTES.problems['number-of-islands']} render={() => <NumberOfIslands {...props} />} />
       <Route path={ROUTES.problems['palindrome-number']} render={() => <PalindromeNumber {...props} />} />
