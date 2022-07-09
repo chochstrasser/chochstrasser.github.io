@@ -20,6 +20,11 @@ const NavLinks = ({ onClick }) => {
           text="Add two numbers"
         />
         <NavLink
+          onClick={onClick(ROUTES.problems.compoundWords)}
+          isActive={pathname === ROUTES.problems.compoundWords}
+          text="Compound words"
+        />
+        <NavLink
           onClick={onClick(ROUTES.problems.longestSubstringWithoutRepeatingCharacters)}
           isActive={pathname === ROUTES.problems.longestSubstringWithoutRepeatingCharacters}
           text="Longest substring without repeating characters"
