@@ -5,6 +5,7 @@ const ROUTES = {
   problems: {
     twoSum: '/problems/twoSum',
     addTwoNumbers: '/problems/add-two-numbers',
+    compoundWords: '/problems/compound-words',
     longestSubstringWithoutRepeatingCharacters: '/problems/longest-substring-without-repeating-characters',
     'median-of-two-sorted-arrays': '/problems/median-of-two-sorted-arrays',
     zigzag: '/problems/zigzag-conversion',

@@ -11,6 +11,7 @@ import Trie from './data-structures/trie';
 // Problems
 import TwoSum from './problems/twoSum';
 import AddTwoNumbers from './problems/addTwoNumbers';
+import CompoundWords from './problems/compoundWords';
 import LongestSubStringWithoutRepeatingCharacters from './problems/longestSubStringWithoutRepeatingCharacters';
 import MedianOfTwoSortedArrays from './problems/medianOfTwoSortedArrays';
 import ZigZag from './problems/zigZag';
@@ -22,7 +23,7 @@ import LongestCommonPrefix from './problems/longestCommonPrefix';
 import ValidParentheses from './problems/validParentheses';
 import MergeTwoSortedLists from './problems/mergeTwoSortedLists';
 import Flatten from './problems/flatten';
-import FloodFill from './problems/flood-fill';
+import FloodFill from './problems/floodFill';
 
 // Games
 import TicTacToe from './games/tic-tac-toe';
@@ -45,6 +46,7 @@ const PrimaryRoutes = (props: Props) => {
       <Route path={ROUTES.trie} render={() => <Trie {...props} />} />
       <Route path={ROUTES.problems.twoSum} render={() => <TwoSum {...props} />} />
       <Route path={ROUTES.problems.addTwoNumbers} render={() => <AddTwoNumbers {...props} />} />
+      <Route path={ROUTES.problems.compoundWords} render={() => <CompoundWords {...props} />} />
       <Route
         path={ROUTES.problems.longestSubstringWithoutRepeatingCharacters}
         render={() => <LongestSubStringWithoutRepeatingCharacters {...props} />}
