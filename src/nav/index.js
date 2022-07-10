@@ -1,4 +1,4 @@
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useAuth0 } from '@auth0/auth0-react';
 import { NavBlur, LineWrapper, Line, FlexNavBar, NavBodyContent } from './nav-style';
 import NavLinks from './nav-links';
@@ -12,20 +12,18 @@ const Flex = styled.div`
 `;
 
 const Nav = ({ handleClick, elementId, showModal, setShowModal }) => {
-  const history = useHistory();
-  const { user, isAuthenticated, isLoading } = useAuth0();
+  const navigate = useNavigate();
+  const { isAuthenticated, isLoading } = useAuth0();
 
   const handleNavItemClick = (path) => () => {
     document.getElementById(elementId).style.display = 'none';
-    history.push(path);
+    navigate(path);
     setShowModal(false);
   };
 
   if (isLoading) {
     return <div>Loading ...</div>;
   }
-
-  console.log('user', user);
 
   return (
     <>

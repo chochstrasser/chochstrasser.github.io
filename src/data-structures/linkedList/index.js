@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import LinkedListCode from './linkedListCode';
 import LinkedListRef from './linkedListRef';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import LinkedListDetail from './linkedListDetail';
 import ROUTES from '../../const/routes';
 
@@ -10,10 +10,10 @@ const Wrapper = styled.div`
 `;
 
 const LinkedList = ({ showModal }) => {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleClick = (path) => () => {
-    history.push(path);
+    navigate(path);
     window.scrollTo(0, 0);
   };
 

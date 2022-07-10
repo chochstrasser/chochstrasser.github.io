@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Detail from './detail';
 import ROUTES from '../../const/routes';
 import Code from '../../components/code';
@@ -39,10 +39,10 @@ const Wrapper = styled.div`
 `;
 
 const CompoundWords = ({ showModal }) => {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleClick = (path) => () => {
-    history.push(path);
+    navigate(path);
     window.scrollTo(0, 0);
   };
 
