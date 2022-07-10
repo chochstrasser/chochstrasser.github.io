@@ -1,4 +1,4 @@
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Code from './code';
 import Reference from './reference';
 import Detail from './detail';
@@ -6,10 +6,10 @@ import ROUTES from '../../const/routes';
 import { Wrapper } from './validParentheses-styles';
 
 const Flatten = ({ showModal }) => {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleClick = (path) => () => {
-    history.push(path);
+    navigate(path);
     window.scrollTo(0, 0);
   };
 

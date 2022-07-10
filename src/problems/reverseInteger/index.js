@@ -1,4 +1,4 @@
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Code from './code';
 import Reference from './reference';
 import Detail from './detail';
@@ -7,10 +7,10 @@ import FlowChart from '../../images/flowchart-to-find-reverse-of-a-number.jpg';
 import { Wrapper, Image } from './reverseInteger-styles';
 
 const Flatten = ({ showModal }) => {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleClick = (path) => () => {
-    history.push(path);
+    navigate(path);
     window.scrollTo(0, 0);
   };
 

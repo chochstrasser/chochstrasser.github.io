@@ -16,7 +16,6 @@ const Moves = ({ history, jumpTo, stepNumber }) =>
   history.map((step, move) => {
     const desc = move ? `Go to move #${move} ${POSITIONS[step.position]}` : 'Go to game start';
 
-    console.log('step number', stepNumber, move);
     return (
       <ListItem key={move} onClick={() => jumpTo(move)} active={stepNumber - move === 0}>
         {desc}

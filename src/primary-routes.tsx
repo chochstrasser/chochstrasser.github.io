@@ -1,4 +1,4 @@
-import { Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './icons.js';
 import ROUTES from './const/routes';
 import FourZeroFour from './404.js';
@@ -41,36 +41,36 @@ type Props = {
 
 const PrimaryRoutes = (props: Props) => {
   return (
-    <Switch>
-      <Route exact path={ROUTES.default} render={() => <Portfolio {...props} />} />
-      <Route path={ROUTES.linkedList} render={() => <LinkedList {...props} />} />
-      <Route path={ROUTES.trie} render={() => <Trie {...props} />} />
-      <Route path={ROUTES.problems.twoSum} render={() => <TwoSum {...props} />} />
-      <Route path={ROUTES.problems.addTwoNumbers} render={() => <AddTwoNumbers {...props} />} />
-      <Route path={ROUTES.problems['compound-words']} render={() => <CompoundWords {...props} />} />
+    <Routes>
+      <Route path={ROUTES.default} element={<Portfolio {...props} />} />
+      <Route path={ROUTES.linkedList} element={<LinkedList {...props} />} />
+      <Route path={ROUTES.trie} element={<Trie {...props} />} />
+      <Route path={ROUTES.problems.twoSum} element={<TwoSum {...props} />} />
+      <Route path={ROUTES.problems.addTwoNumbers} element={<AddTwoNumbers {...props} />} />
+      <Route path={ROUTES.problems['compound-words']} element={<CompoundWords {...props} />} />
       <Route
         path={ROUTES.problems.longestSubstringWithoutRepeatingCharacters}
-        render={() => <LongestSubStringWithoutRepeatingCharacters {...props} />}
+        element={<LongestSubStringWithoutRepeatingCharacters {...props} />}
       />
-      <Route path={ROUTES.problems['median-of-two-sorted-arrays']} render={() => <MedianOfTwoSortedArrays {...props} />} />
-      <Route path={ROUTES.problems.zigzag} render={() => <ZigZag {...props} />} />
-      <Route path={ROUTES.problems['reverse-string']} render={() => <ReverseString {...props} />} />
-      <Route path={ROUTES.problems['reverse-integer']} render={() => <ReverseInteger {...props} />} />
-      <Route path={ROUTES.problems['number-of-islands']} render={() => <NumberOfIslands {...props} />} />
-      <Route path={ROUTES.problems['palindrome-number']} render={() => <PalindromeNumber {...props} />} />
-      <Route path={ROUTES.problems['roman-to-integer']} render={() => <RomanToInteger {...props} />} />
-      <Route path={ROUTES.problems['longest-common-prefix']} render={() => <LongestCommonPrefix {...props} />} />
-      <Route path={ROUTES.problems['valid-parentheses']} render={() => <ValidParentheses {...props} />} />
-      <Route path={ROUTES.problems['merge-two-sorted-lists']} render={() => <MergeTwoSortedLists {...props} />} />
-      <Route path={ROUTES.problems.flatten} render={() => <Flatten {...props} />} />
-      <Route path={ROUTES.problems.floodFill} render={() => <FloodFill {...props} />} />
-      <Route path={ROUTES.games['tic-tac-toe']} render={() => <TicTacToe {...props} />} />
-      <Route path={ROUTES.apps['recipes']} render={() => <Recipes {...props} />} />
-      <Route path={ROUTES.apps['stock-pile']} render={() => <StockPile {...props} />} />
-      <Route path={ROUTES.apps.stopwatch} render={() => <Stopwatch {...props} />} />
-      <Route path={ROUTES.apps['star-wars']} render={() => <StarWars />} />
-      <Route component={FourZeroFour} />
-    </Switch>
+      <Route path={ROUTES.problems['median-of-two-sorted-arrays']} element={<MedianOfTwoSortedArrays {...props} />} />
+      <Route path={ROUTES.problems.zigzag} element={<ZigZag {...props} />} />
+      <Route path={ROUTES.problems['reverse-string']} element={<ReverseString {...props} />} />
+      <Route path={ROUTES.problems['reverse-integer']} element={<ReverseInteger {...props} />} />
+      <Route path={ROUTES.problems['number-of-islands']} element={<NumberOfIslands {...props} />} />
+      <Route path={ROUTES.problems['palindrome-number']} element={<PalindromeNumber {...props} />} />
+      <Route path={ROUTES.problems['roman-to-integer']} element={<RomanToInteger {...props} />} />
+      <Route path={ROUTES.problems['longest-common-prefix']} element={<LongestCommonPrefix {...props} />} />
+      <Route path={ROUTES.problems['valid-parentheses']} element={<ValidParentheses {...props} />} />
+      <Route path={ROUTES.problems['merge-two-sorted-lists']} element={<MergeTwoSortedLists {...props} />} />
+      <Route path={ROUTES.problems.flatten} element={<Flatten {...props} />} />
+      <Route path={ROUTES.problems.floodFill} element={<FloodFill {...props} />} />
+      <Route path={ROUTES.games['tic-tac-toe']} element={<TicTacToe {...props} />} />
+      <Route path={ROUTES.apps['recipes']} element={<Recipes {...props} />} />
+      <Route path={ROUTES.apps['stock-pile']} element={<StockPile {...props} />} />
+      <Route path={ROUTES.apps.stopwatch} element={<Stopwatch {...props} />} />
+      <Route path={ROUTES.apps['star-wars']} element={<StarWars />} />
+      <Route path="*" element={<FourZeroFour />} />
+    </Routes>
   );
 };
 export default PrimaryRoutes;
