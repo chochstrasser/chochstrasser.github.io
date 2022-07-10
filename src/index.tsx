@@ -1,26 +1,26 @@
-import { StrictMode } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
 import ThemeProvider from './context/theme-context';
 import { Auth0Provider } from '@auth0/auth0-react';
 import config from './config';
+import reportWebVitals from './reportWebVitals';
 
-console.log('config', config);
+const container = document.getElementById('root')!;
+const root = ReactDOM.createRoot(container);
 
-ReactDOM.render(
-  <StrictMode>
+root.render(
+  <React.StrictMode>
     <ThemeProvider>
       <Auth0Provider domain={config.DOMAIN} clientId={config.CLIENT_ID} redirectUri={window.location.origin}>
         <App />
       </Auth0Provider>
     </ThemeProvider>
-  </StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
