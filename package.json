@@ -70,10 +70,5 @@
       "prettier --write"
     ]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged && yarn test"
-    }
-  },
   "packageManager": "yarn@3.2.1"
 }
