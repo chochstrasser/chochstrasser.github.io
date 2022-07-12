@@ -20,8 +20,8 @@ const NavLinks = ({ onClick }) => {
           text="Add two numbers"
         />
         <NavLink
-          onClick={onClick(ROUTES.problems.compoundWords)}
-          isActive={pathname === ROUTES.problems.compoundWords}
+          onClick={onClick(ROUTES.problems['compound-words'])}
+          isActive={pathname === ROUTES.problems['compound-words']}
           text="Compound words"
         />
         <NavLink
