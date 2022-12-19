@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import * as React from 'react';
 import Tabs from './tabs';
 import SideBar from './sideBar';
-import MainContent from './content';
+import MainContent from './mainContent';
 
 const StockPile = ({ showModal }) => {
-  const [tab, setTab] = useState(null);
-  const [sideBarLink, setSideBarLink] = useState(null);
+  const [tab, setTab] = React.useState(null);
+  const [sideBarLink, setSideBarLink] = React.useState(null);
 
   const handleTabChange = (value) => {
     setTab(value);

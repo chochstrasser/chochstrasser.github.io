@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import * as React from 'react';
 import Board from './board';
 import useCalculateWinner from './useCalculateWinner';
 import { GameWrapper, Game, GameBoard, GameInfo } from './tic-tac-toe-style';
@@ -16,7 +16,7 @@ const INITIAL_STATE = {
 };
 
 const TicTacToe = ({ showModal }) => {
-  const [state, setState] = useState(INITIAL_STATE);
+  const [state, setState] = React.useState(INITIAL_STATE);
   const current = state.history[state.stepNumber];
   const { status, winner } = useCalculateWinner({
     ...current,

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import * as React from 'react';
 
 const FETCH_HEADERS = {
   GET: {
@@ -27,8 +27,7 @@ const fetchAndPushStock = async (ticker) => {
         passphrase: sessionStorage.getItem('hotkey'),
       }),
     });
-    let data = await response.json();
-    return data;
+    return await response.json();
   } catch (error) {
     return error;
   }
@@ -39,11 +38,11 @@ const isAllowedToSearch = () => {
 };
 
 const PushPage = () => {
-  const [state, setState] = useState({ allowed: false });
+  const [state, setState] = React.useState({ allowed: false });
 
-  const inputEl = useRef(null);
+  const inputEl = React.useRef(null);
 
-  useEffect(() => {
+  React.useEffect(() => {
     const allowed = isAllowedToSearch();
     setState({ allowed });
   }, []);

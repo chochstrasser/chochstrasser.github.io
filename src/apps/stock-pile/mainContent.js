@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import PushPage from './push';
+import PushPage from './pushPage';
 import Summary from './Summary';
 
 const Content = styled.div`

@@ -41,8 +41,8 @@
     "eject": "react-scripts eject",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -b master -d build",
-    "lint": "eslint --ext .jsx,.js src/",
-    "lint:fix": "eslint --ext .jsx,.js,.ts,.tsx src/ --fix",
+    "lint": "node_modules/.bin/eslint --ext .jsx,.js,.tsx,.ts src/",
+    "lint:fix": "node_modules/.bin/eslint --ext .jsx,.js,.ts,.tsx src/ --fix",
     "format": "prettier --write '**/*.{js,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml,scss,sass}' && yarn lint:fix"
   },
   "eslintConfig": {
@@ -65,8 +65,8 @@
     ]
   },
   "lint-staged": {
-    "*.{js,jsx}": [
-      "eslint --fix",
+    "*.{js,jsx,ts,tsx}": [
+      "node_modules/.bin/eslint --fix",
       "prettier --write"
     ]
   },
