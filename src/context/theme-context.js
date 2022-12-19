@@ -1,10 +1,9 @@
-import { useState } from 'react';
-import { createContext } from 'react';
+import * as React from 'react';
 
-export const themeContext = createContext();
+export const themeContext = React.createContext();
 
 const ThemeProvider = ({ children }) => {
-  const [themeLight, setThemeLight] = useState(() => sessionStorage.getItem('theme-light') !== 'false');
+  const [themeLight, setThemeLight] = React.useState(() => sessionStorage.getItem('theme-light') !== 'false');
 
   const onChangeTheme = (value) => {
     sessionStorage.setItem('theme-light', value);

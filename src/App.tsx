@@ -1,4 +1,4 @@
-import { useState, useContext } from 'react';
+import * as React from 'react';
 import './App.css';
 import { themeContext } from './context/theme-context';
 import { MODAL_ID } from './const/ids';
@@ -8,8 +8,8 @@ import PrimaryRoutes from './primary-routes';
 import { BrowserRouter } from 'react-router-dom';
 
 const App = () => {
-  const { themeLight } = useContext(themeContext);
-  const [showModal, setShowModal] = useState(false);
+  const { themeLight } = React.useContext(themeContext);
+  const [showModal, setShowModal] = React.useState(false);
 
   const handleClick = (display: string) => () => {
     document.getElementById(MODAL_ID)!.style.display = display;
